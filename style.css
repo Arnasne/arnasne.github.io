@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* Nav bar */
+
+#navbar {
+    background-color: rgb(77, 40, 112);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu {
+    padding-right: 20px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    font-size: 20px;
+    padding: 22.9px;
+}
+
+nav a:hover {
+    background-color: rgb(6, 240, 17);
+    color:rgb(110, 110, 110);
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#welcome-section h1 {
+    color:#fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(59, 59, 59);
+}
+
+/* Welcome section */
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(62deg, #fcf945 0%, #da1bec 70%, #fc89f6 95%);
+}
+
+#welcome-section p {
+    color: rgb(48, 48, 48);
+    font-size: 25px;
+    font-style: italic;
+    font-family: monospace;
+}
+
+/* Projects section */
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color:rgb(10, 46, 48);
+}
+
+.projects-section-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid;
+    color:rgb(6, 240, 17);
+    text-shadow: 0px 0px 70px rgb(6, 240, 17);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    background-color:rgb(77, 40, 112)
+}
+
+.project-title:hover {
+    color: rgb(6, 240, 17);
+    transition: 0.3s ease-out;
+}
+
+.code {
+    color: orange;
+}
+
+/* Contact section */
+
+.contact-section {
+    background-image: linear-gradient(62deg, #3454e0 0%, rgb(122, 55, 122) 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+.contact-section-header > h2 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    color: gold;
+    padding: 10px;
+}
+
+
+.ftr-border {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.ftr-info {
+    height: 15vh;
+    background-color: rgb(77, 40, 112);
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+
+/* media queries */ 
+@media (max-width: 490px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+    
+    .projects-section-header {
+        font-size: 2.2rem;
+        max-width: 400px;
+    } 
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .projects-section-header {
+        font-size: 2.5rem;
+    }
+}

@@ -1,3 +1,3 @@
-This is my personal web page. Hope you like it. 😊
+This is my personal website.
 
 You can see my website live at https://arnasne.github.io

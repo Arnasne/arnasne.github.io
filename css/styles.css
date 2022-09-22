@@ -1,0 +1,620 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+}
+
+h1 {
+    font-size: 5.625rem;
+    margin: 50px auto 0;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    padding: 0 0.625rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.625rem 1.25rem;
+    text-decoration: none;
+}
+
+hr {
+    border: dotted hsl(180, 41%, 87%) 0.375rem;
+    border-bottom: none;
+    width: 3%;
+    margin: 6.25rem auto;
+}
+
+/************* top **************/
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 6.25rem;
+}
+
+.mountain {
+    max-width: 100%;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 18.75rem;
+    top: 5rem;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 18.75rem;
+    bottom: 18.75rem;
+}
+
+/************* middle **************/
+
+.avatar-img {
+    width: 7rem;
+    margin: 6.25rem auto 1.25rem auto;
+    border-radius: 100%;
+    background-color: #E4F9F5;
+}
+
+.intro-p {
+    width: 20%;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.icont-decor-lang {
+    opacity: 0.1;
+    width: 25%;
+    min-width: 10rem;
+    position: absolute;
+    left: 3.75rem;
+    top: 96.875rem;
+    rotate: 350deg;
+}
+
+.icon-decor-dev {
+    opacity: 0.3;
+    width: 25%;
+    min-width: 10rem;
+    position: absolute;
+    right: 3.125rem;
+}
+
+.skill-img {
+    width: 9rem;
+    margin: 1.875rem auto;
+}
+
+.programming-lang-img {
+    width: 3.5rem;
+    margin-top: 1.5625rem;
+}
+
+.contact-me h3 {
+    margin: 3.125rem auto;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+    padding: 0.9375rem 2.8125rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #EAF6F6;
+    box-shadow: 0 0 1.25rem #eee;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+}
+
+
+/************* bottom **************/
+
+.foot-mountains {
+    margin-bottom: -0.375rem;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    min-height: 12.5rem;
+    padding: 3.125rem 0 1.25rem;
+}
+
+a,
+.footer-link {
+    margin: 0 0.625rem;
+}
+
+.footer-link img {
+    width: 2.5rem;
+    filter: invert(50%) sepia(35%) saturate(953%) hue-rotate(133deg) brightness(90%) contrast(95%);
+}
+
+.footer-link:hover {
+    filter: invert(50%) sepia(40%) saturate(953%) hue-rotate(120deg) brightness(100%) contrast(400%);
+}
+
+.thanks-p {
+    color: #11999E;
+    position: relative;
+    top: 1.875rem;
+}
+
+.footer-link-fi {
+    position: relative;
+    display: inline-block;
+    top: 1.25rem;
+    width: 50%;
+    font-size: 0.8rem;
+    line-height: 0;
+}
+
+.footer-hr {
+    border: none;
+    border-bottom: solid #11999E 0.0625rem;
+    width: 20%;
+    margin: 2.5rem auto 0;
+}
+
+.copyright {
+    color: rgb(234, 246, 246);
+    font-size: 0.75rem;
+    padding: 0 0 0.625rem 0;
+    position: relative;
+    top: 1.25rem;
+}
+
+/********** media query **********/
+
+@media (max-width: 1151px) {
+    .top-cloud {
+        right: 6.25rem;
+    }
+
+    .bottom-cloud {
+        left: 6.25rem;
+    }
+
+    .intro-p {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1026px) {
+    .top-cloud {
+        right: 6.25rem;
+    }
+
+    .bottom-cloud {
+        left: 6.25rem;
+    }
+}
+
+@media (max-width: 951px) {
+    .top-cloud {
+        right: 9.375rem;
+    }
+
+    .bottom-cloud {
+        left: 9.375rem;
+    }
+
+    .intro-p {
+        width: 40%;
+    }
+
+    .icont-decor-lang {
+        left: 1.875rem;
+    }
+
+    .icon-decor-dev {
+        right: 1.875rem;
+    }
+
+    .btn {
+        margin-bottom: 6.25rem;
+    }
+}
+
+@media (max-width: 831px) {
+    .top-cloud {
+        right: 6.25rem;
+    }
+
+    .bottom-cloud {
+        left: 6.25rem;
+    }
+
+    .footer-link-fi {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 776px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .top-cloud {
+        right: 3.125rem;
+        width: 17%;
+    }
+
+    .bottom-cloud {
+        left: 3.125rem;
+        width: 17%;
+    }
+
+
+    .avatar-img {
+        width: 5rem;
+    }
+
+    .skill-img {
+        width: 5rem;
+    }
+
+    .intro-p {
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .programming-lang-img {
+        width: 2.5rem;
+    }
+
+    .thanks-p {
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 551px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .top-container {
+        padding-top: 3.125rem;
+    }
+
+    .top-cloud {
+        right: 1.875rem;
+        top: 3.125rem;
+        width: 20%;
+    }
+
+    .bottom-cloud {
+        left: 1.875rem;
+        top: 18.75rem;
+        width: 20%;
+    }
+
+    .avatar-img {
+        width: 5rem;
+    }
+
+    .intro-p {
+        font-size: 0.8rem;
+        width: 50%;
+    }
+
+    .skill-row {
+        width: 60%;
+        margin: 3.125rem auto 6.25rem auto;
+    }
+
+    .skill-img {
+        width: 5rem;
+    }
+
+    .icont-decor-lang {
+        width: 25%;
+        left: 0.625rem;
+        top: 96.875rem;
+    }
+
+    .icon-decor-dev {
+        width: 25%;
+        top: 78.125rem;
+        right: 1.25rem;
+    }
+
+    .btn {
+        margin-bottom: 6.25rem;
+    }
+}
+
+@media (max-width: 501px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    hr {
+        border: dotted hsl(180, 41%, 87%) 0.25rem;
+        border-bottom: none;
+        width: 4%;
+    }
+
+    .top-container {
+        padding-top: 3.125rem;
+    }
+
+    .top-cloud {
+        right: 1.875rem;
+        top: 3.125rem;
+    }
+
+    .bottom-cloud {
+        left: 1.875rem;
+        top: 15.625rem;
+    }
+
+    .icont-decor-lang {
+        display: none;
+    }
+
+    .icon-decor-dev {
+        display: none;
+    }
+
+    .footer-link img {
+        width: 2rem;
+    }
+
+    .footer-link-fi {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 351px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .intro-p {
+        font-size: 0.6rem;
+        width: 60%;
+    }
+
+    hr {
+        border: dotted hsl(180, 41%, 87%) 0.125rem;
+        border-bottom: none;
+        margin: 3.125rem auto;
+    }
+
+    .top-cloud {
+        right: 1.875rem;
+        top: 3.75rem;
+    }
+
+    .bottom-cloud {
+        left: 1.875rem;
+        top: 13.75rem;
+    }
+
+    .avatar-img {
+        width: 3.5rem;
+        margin: 3.125rem auto 1.25rem auto;
+    }
+
+    .skill-row {
+        width: 60%;
+        margin: 0 auto 3.125rem auto;
+    }
+
+    .skill-img {
+        width: 3.5rem;
+    }
+
+    .programming-lang-img {
+        width: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8rem;
+    }
+
+    .footer-link-fi {
+        font-size: 0.5rem;
+    }
+
+    .copyright {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 281px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 2.5rem auto 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    .top-container {
+        padding-top: 0.625rem;
+    }
+
+    .top-cloud {
+        right: 1.25rem;
+        top: 1.875rem;
+    }
+
+    .bottom-cloud {
+        left: 1.25rem;
+        top: 9.375rem;
+    }
+
+    .avatar-img {
+        width: 2.5rem;
+    }
+
+    .skill-img {
+        width: 2.5rem;
+        margin: 30px auto 30px auto;
+    }
+
+    .intro-p {
+        font-size: 0.4rem;
+        width: 50%;
+    }
+
+    .programming-lang-img {
+        width: 1rem;
+    }
+
+
+    .footer-link-fi {
+        font-size: 0.3rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1.125rem;
+        font-size: 0.6rem;
+    }
+
+    .footer-link img {
+        width: 1.25rem;
+    }
+
+    .copyright {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 191px) {
+    h1 {
+        margin: 1.875rem auto 0;
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    h3 {
+        font-size: 0.3rem;
+    }
+
+    hr {
+        border: dotted hsl(180, 41%, 87%) 0.0625rem;
+        border-bottom: none;
+        margin: 1.875rem auto;
+    }
+
+    .top-container {
+        padding-top: 0.3125rem;
+    }
+
+    .top-cloud {
+        width: 15%;
+        right: 0.625rem;
+        top: 1.5625rem;
+    }
+
+    .bottom-cloud {
+        width: 15%;
+        left: 0.9375rem;
+        top: 5.9375rem;
+    }
+
+    .avatar-img {
+        width: 1.5rem;
+        margin: 2.5rem auto 1.25rem auto;
+    }
+
+    .intro-p {
+        font-size: 0.2rem;
+        width: 40%;
+    }
+
+    .skill-img {
+        width: 1.5rem;
+    }
+
+    .programming-lang-img {
+        width: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.9375rem;
+        font-size: 0.4rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .footer-link img {
+        width: 1rem;
+    }
+
+    .footer-link {
+        margin-left: 0.0625rem;
+    }
+
+    .thanks-p {
+        font-size: 0.3rem;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<title>FCC: Product Landing Page</title>
+</head>
+
+<body>
+	<div>
+		<header role="banner" id="header">
+			<div>
+				<a href="index.html">
+					<img id="header-img" src="images/l.png" alt="Space flights company logo" />
+				</a>
+			</div>
+			<nav role="navigation" id="nav-bar">
+				<ul>
+					<li>
+						<a class="nav-link" href="#nav-bar">Home</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#video-div">Flights</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#pricing">Tickets</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main role="main">
+			<div class="img-text-container">
+				<img class="image" src="images/saturn.jpg" alt="image of saturn" />
+				<div class="text-cont">
+					<h1 class="main-text">
+						Welcome to the Space Flights!<br>
+						We offer you express class space flights<br>
+						to the Moon, Venus and Saturn<br>
+						at the best price!
+					</h1>
+				</div>
+			</div>
+			<div id="video-div">
+				<iframe id="video" allowfullscreen frameborder="0"
+					src="https://www.youtube.com/embed/QP5lBHE2_gs"></iframe>
+			</div>
+			<div id="pricing">
+				<div class="product">
+					<div class="hdr">Moon</div>
+					<hr>
+					<p>Express class ticket to Moon</p>
+					<p class="price">$2.300</p>
+					<button class="btn-buy">Buy now</button>
+				</div>
+				<div class="product">
+					<div class="hdr">Venus</div>
+					<hr>
+					<p>Express class ticket to Venus</p>
+					<p class="price">$3.600</p>
+					<button class="btn-buy">Buy now</button>
+				</div>
+				<div class="product">
+					<div class="hdr">Saturn</div>
+					<hr>
+					<p>Express class ticket to Saturn</p>
+					<p class="price">$4.800</p>
+					<button class="btn-buy">Buy now</button>
+				</div>
+			</div>
+			<p id="book-info">Enter your email to book tickets</p>
+			<div class="booking-container">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<input id="email" name="email" type="email" placeholder="Your email address" required />
+					<input id="submit" type="submit" value="book tickets" />
+				</form>
+			</div>
+		</main>
+		<footer role="contentinfo" id="footer">
+			<div id="footer-links">
+				<ul class="ul-links">
+					<li>
+						<a href="#">Contatcs</a>
+					</li>
+					<li>
+						<a href="#">News</a>
+					</li>
+					<li>
+						<a href="#">Deals</a>
+					</li>
+				</ul>
+				<p class="copyright">Copyright &copy; 2072 • Space Flights</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

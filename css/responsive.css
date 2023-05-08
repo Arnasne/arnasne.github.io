@@ -1,0 +1,189 @@
+@media (max-width: 769px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .heading-two-style {
+    font-size: 2rem;
+  }
+
+  .header .heading-two-style::before {
+    background-size: 90%;
+    top: 18rem;
+    width: 130px;
+    height: 38px;
+  }
+
+  .header .heading-two-style::after {
+    background-size: 90%;
+    width: 130px;
+    height: 38px;
+  }
+
+  .chat-img {
+    max-width: 19rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 577px) {
+  .header {
+    padding-top: 5rem;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .header .heading-two-style {
+    font-size: 1.5rem;
+  }
+
+  .header .heading-two-style::before {
+    background-size: 95%;
+    width: 95px;
+    top: 12rem;
+  }
+
+  .header .heading-two-style::after {
+    background-size: 95%;
+    width: 95px;
+    top: 3rem;
+    left: 69%;
+  }
+
+  .avatar-img {
+    max-width: 6rem;
+  }
+
+  .contact-me .heading-two-style {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .header {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 4rem;
+  }
+
+  .header .heading-two-style::before {
+    background-size: 100%;
+    width: 77px;
+    height: 25px;
+    top: 11rem;
+    left: 1rem;
+  }
+
+  .header .heading-two-style::after {
+    background-size: 100%;
+    width: 77px;
+    height: 25px;
+    top: 2rem;
+    left: inherit;
+    right: 1rem;
+  }
+
+  .contact-me .heading-two-style {
+    font-size: 2.6rem;
+  }
+
+  .heading-three {
+    font-size: 1.3rem;
+  }
+
+  .chat-img {
+    max-width: 13rem;
+    right: 3rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .header .heading-two-style {
+    font-size: 1.1rem;
+  }
+
+  .header .heading-two-style::before {
+    top: 10rem;
+  }
+
+  .heading-two-style {
+    font-size: 1.7rem;
+  }
+
+  .heading-three {
+    font-size: 1.1rem;
+  }
+
+  .contact-me .heading-two-style {
+    font-size: 2.2rem;
+  }
+
+  .introduction-text {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .avatar-img {
+    max-width: 4.5rem;
+  }
+
+  .programming-lang-img {
+    max-width: 3.3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 281px) {
+  body {
+    word-wrap: break-word;
+  }
+
+  .header {
+    padding-top: 3rem;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .header .heading {
+    font-size: 2rem;
+  }
+
+  .header .heading-two-style {
+    font-size: 1rem;
+  }
+
+  .header .heading-two-style::before {
+    width: 60px;
+    height: 19px;
+    top: 7.5rem;
+    left: 1rem;
+  }
+
+  .header .heading-two-style::after {
+    width: 60px;
+    height: 19px;
+    top: 1.6rem;
+    right: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Oxanium:wght@200;400;600;800&display=swap"
+		rel=" stylesheet">
+	<title>FCC: Product Landing Page</title>
+</head>
+
+<body>
+	<!-- hero section -->
+	<header role="banner" id="header">
+		<nav role="navigation" id="nav-bar">
+			<a href="index.html">
+				<img id="header-img" src="images/logo.png" alt="Space flights logo">
+			</a>
+			<ul class="nav-links">
+				<li>
+					<a class="nav-link" href="#header">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#video-div">About Us</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#pricing">Tickets</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#book-tickets">Book tickets</a>
+				</li>
+			</ul>
+			<!-- hamburger menu -->
+			<div class="hamburger-container">
+				<input type="checkbox" id="checkbox">
+				<label for="checkbox" class="toggle">
+					<div class="bars" id="bar1"></div>
+					<div class="bars" id="bar2"></div>
+					<div class="bars" id="bar3"></div>
+				</label>
+			</div>
+		</nav>
+	</header>
+	<!-- main section -->
+	<main role="main">
+		<section class="bg-hero-wrapper">
+			<div class="text-container">
+				<h1 class="main-text">
+					Welcome to the future!
+				</h1>
+				<h2 class="sub-heading">Experience unforgettable Space flights
+					to the Moon, Venus and Saturn!
+				</h2>
+				<a href="#pricing"><button class="btn">Explore now</button></a>
+			</div>
+			<img class="img-venera" src="images/venera.png" alt="planet venera">
+		</section>
+		<!-- video section -->
+		<div id="video-div">
+			<iframe id="video" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/QP5lBHE2_gs"></iframe>
+		</div>
+		<!-- pricing -->
+		<div id="pricing" class="container">
+			<div class="product">
+				<div class="hdr">Moon</div>
+				<hr>
+				<p class="product-text">Express class ticket to Moon</p>
+				<p class="price">$2.300</p>
+				<button class="btn">Buy now</button>
+			</div>
+			<div class="product">
+				<div class="hdr">Venus</div>
+				<hr>
+				<p class="product-text">Express class ticket to Venus</p>
+				<p class="price">$3.600</p>
+				<button class="btn">Buy now</button>
+			</div>
+			<div class="product">
+				<div class="hdr">Saturn</div>
+				<hr>
+				<p class="product-text">Express class ticket to Saturn</p>
+				<p class="price">$4.800</p>
+				<button class="btn">Buy now</button>
+			</div>
+		</div>
+		<!-- booking section -->
+		<div id="book-info" class="container">
+			<p class="book-info-text">Enter your email to book tickets</p>
+			<div id="book-tickets" class="booking-container">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<input id="email" name="email" type="email" placeholder="Your email address" required />
+					<input class="btn" id="submit" type="submit" value="book tickets" />
+				</form>
+			</div>
+		</div>
+	</main>
+	<!-- footer -->
+	<footer role="contentinfo" id="footer" class="container">
+		<div class="footer-links-logo">
+			<div id="footer-links">
+				<ul class="ul-links">
+					<li class="link">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="link">
+						<a href="#video-div">About Us</a>
+					</li>
+					<li class="link">
+						<a href="#pricing">Tickets</a>
+					</li>
+				</ul>
+			</div>
+			<a class="footer-logo-container" href="index.html"><img class="footer-logo" src="images/logo.png"
+					alt="space flights logo"></a>
+		</div>
+		<p class="copyright">Copyright &copy; 2072 • Space Flights • Designed by&nbsp;<a class="arnas"
+				href="https://arnasne.github.io">Arnas</a></p>
+	</footer>
+</body>
+
+</html>

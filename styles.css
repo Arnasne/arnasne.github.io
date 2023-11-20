@@ -285,7 +285,6 @@ nav ul li a:hover {
   gap: 2rem;
   justify-content: center;
   background: url('images/galaxy.jpg') no-repeat center;
-  background-size: cover;
   padding-top: 10em;
   padding-bottom: 10em;
   flex-wrap: wrap;

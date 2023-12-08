@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --bg-light: #e4f9f5;
+  --text-dark: #40514e;
+  --headings-one-two: #66bfbf;
+  --heading-three: #11999e;
+  --dotted-hr: #d0ebeb;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format('woff2');
+  font-display: swap;
+}
+
+body {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: var(--text-dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+}
+
+.container {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+/************* headings **************/
+
+.heading {
+  font-family: 'Sacramento', cursive;
+  color: var(--headings-one-two);
+  font-size: 5.5rem;
+}
+
+.heading-two-style {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  color: var(--headings-one-two);
+  font-weight: normal;
+}
+
+.heading-three {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--heading-three);
+  font-size: 1.4rem;
+}
+
+/************* header **************/
+
+.header {
+  background: rgb(219, 246, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 246, 246, 1) 20%,
+    rgba(255, 255, 255, 1) 45%,
+    rgba(228, 249, 245, 1) 89%,
+    rgba(219, 246, 246, 1) 100%
+  );
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 7rem;
+}
+
+.header .heading-two-style::before {
+  content: '';
+  background-image: url('/images/cloud.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 67%;
+  top: 19rem;
+  width: 150px;
+  height: 50px;
+}
+
+.header .heading-two-style::after {
+  content: '';
+  background-image: url('/images/cloud.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 66%;
+  top: 4rem;
+  width: 150px;
+  height: 50px;
+}
+
+.mountain {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+/************* main **************/
+
+.dotted-hr {
+  border: dotted var(--dotted-hr) 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 6.25rem auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.avatar-img {
+  max-width: 7rem;
+  margin: 8rem auto 6rem;
+  border-radius: 100%;
+  background-color: var(--bg-light);
+}
+
+.introduction-text {
+  max-width: 25ch;
+  margin: auto;
+  padding: 1em 0 0;
+  font-size: 1.1rem;
+}
+
+.tools-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3em 0 0;
+  gap: 2rem;
+}
+
+.programming-lang-img {
+  max-width: 4rem;
+}
+
+/* icons animations */
+.programming-lang-img:hover {
+  -webkit-animation: icon-rotate 0.5s linear both;
+  animation: icon-rotate 0.4s linear both;
+}
+
+@-webkit-keyframes icon-rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes icon-rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+/************* Get In Touch section **************/
+
+.contact-me {
+  padding: 4em 0;
+  margin-bottom: 6rem;
+  background-color: var(--bg-light);
+}
+
+.contact-me .heading-two-style {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+.contact-me .heading-three {
+  margin-bottom: 4rem;
+}
+
+.contact-me-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-img {
+  max-width: 25rem;
+  position: relative;
+  top: 0.1rem;
+  right: 7rem;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    var(--heading-three) 0%,
+    var(--headings-one-two) 51%,
+    var(--heading-three) 100%
+  );
+  padding: 1em 3em;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: var(--bg-light);
+  border-radius: 5em;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 2px 3px rgb(59, 59, 59);
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  box-shadow: none;
+}
+
+/************* My tools section **************/
+
+.my-tools {
+  margin-bottom: 8rem;
+}
+
+/************* Find my services section **************/
+
+.find-services .find-services-text {
+  padding: 0;
+  margin-bottom: 3rem;
+  color: var(--heading-three);
+  font-size: 2rem;
+}
+
+.fa-arrow-down {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--heading-three);
+}
+
+.footer-mountains {
+  margin-bottom: -6px;
+}
+
+/************* footer **************/
+
+footer {
+  background-color: var(--headings-one-two);
+  padding: 3rem 1rem 1rem;
+}
+
+.fa-brands {
+  font-size: 3rem;
+  color: var(--heading-three);
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.fa-brands:hover {
+  color: var(--bg-light);
+  transition: 0.5s ease;
+}
+
+.thanks-p {
+  color: var(--heading-three);
+  margin-bottom: 0.5rem;
+}
+
+.thanksto {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link-fi {
+  font-size: 0.8rem;
+  color: var(--heading-three);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+.footer-link-fi:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: var(--bg-light);
+  font-size: 1rem;
+}

@@ -15,6 +15,7 @@
 
 body {
   background: url('images/stars2.jpg');
+  background-position: 115%;
   font-family: var(--ff-oxanium);
   overflow-x: hidden;
 }

@@ -86,10 +86,10 @@ p {
   background-image: url('/images/cloud.png');
   background-repeat: no-repeat;
   position: absolute;
-  right: 67%;
-  top: 19rem;
+  top: 21rem;
   width: 150px;
   height: 50px;
+  animation: cloud-anim 20s alternate-reverse infinite ease-in-out;
 }
 
 .header .heading-two-style::after {
@@ -97,10 +97,20 @@ p {
   background-image: url('/images/cloud.png');
   background-repeat: no-repeat;
   position: absolute;
-  left: 66%;
-  top: 4rem;
+  top: 6rem;
   width: 150px;
   height: 50px;
+  animation: cloud-anim 25s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes cloud-anim {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-200px);
+  }
 }
 
 .mountain {
@@ -239,28 +249,11 @@ p {
   margin-bottom: 8rem;
 }
 
-/************* Find my services section **************/
-
-.find-services .find-services-text {
-  padding: 0;
-  margin-bottom: 3rem;
-  color: var(--heading-three);
-  font-size: 2rem;
-}
-
-.fa-arrow-down {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  color: var(--heading-three);
-}
+/************* footer **************/
 
 .footer-mountains {
   margin-bottom: -6px;
 }
-
-/************* footer **************/
 
 footer {
   background-color: var(--headings-one-two);

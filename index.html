@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space flights to the Moon Venus and Jupiter">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Fontawsome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..800&family=Oxanium:wght@200..800&display=swap"
+		rel="stylesheet">
+	<title>FCC: Product Landing Page</title>
+	<!-- tabicon -->
+	<link rel="icon" href="/images/tabicon.ico">
+</head>
+
+<body>
+	<!-- hero section -->
+	<header role="banner" id="header">
+		<nav role="navigation" id="nav-bar">
+			<a href="index.html">
+				<img id="header-img" src="images/logo.png" alt="website logo">
+			</a>
+			<ul class="nav-links">
+				<li>
+					<a class="nav-link" href="#header">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#video-div">About Us</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#pricing">Tickets</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#book-tickets">Book tickets</a>
+				</li>
+			</ul>
+			<!-- hamburger menu -->
+			<div class="hamburger-container">
+				<input type="checkbox" id="checkbox">
+				<label for="checkbox" class="toggle">
+					<div class="bars" id="bar1"></div>
+					<div class="bars" id="bar2"></div>
+					<div class="bars" id="bar3"></div>
+				</label>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main section -->
+	<main role="main">
+		<section class="bg-hero-wrapper container">
+			<div class="text-container">
+				<P class="header-fl-info">New flights coming soon!</P>
+				<h1 class="main-text">
+					Welcome to the future!
+				</h1>
+				<h2 class="sub-heading">Experience unforgettable Space flights
+					to the Moon, Venus and Jupiter!
+				</h2>
+				<a href="#pricing"><button class="btn">Explore now</button></a>
+			</div>
+			<img class="img-venera" src="images/jupiter-hero.webp" alt="planet venera">
+		</section>
+		<!-- video section -->
+		<div class="container" id="video-div">
+			<iframe id="video" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/QP5lBHE2_gs"></iframe>
+		</div>
+		<!-- pricing -->
+		<section id="pricing" class="container">
+			<a href="/card-open-page.html">
+				<div class="product">
+					<div class="hdr">Moon</div>
+					<p class="product-text">Space flight to Moon</p>
+					<img class="card-img" src="/images/moon.webp" alt="moon image">
+					<p class="price">$2.300</p>
+				</div>
+			</a>
+			<a href="/card-open-page.html">
+				<div class="product">
+					<div class="hdr">Venus</div>
+					<p class="product-text">Space flight to Venus</p>
+					<img class="card-img" src="/images/venus.webp" alt="venus image">
+					<p class="price">$3.600</p>
+				</div>
+			</a>
+			<a href="/card-open-page.html">
+				<div class="product">
+					<div class="hdr">Jupiter</div>
+					<p class="product-text">Space flight to Jupiter</p>
+					<img class="card-img" src="/images/jupiter.webp" alt="jupiter image">
+					<p class="price">$4.800</p>
+				</div>
+			</a>
+		</section>
+		<!-- booking section -->
+		<section id="book-info" class="container">
+			<p class="book-info-text">Enter email to book tickets</p>
+			<div id="book-tickets" class="booking-container">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<input id="email" name="email" type="email" placeholder="Email address..." required />
+					<input class="btn" id="submit" type="submit" value="book tickets" />
+				</form>
+			</div>
+		</section>
+	</main>
+	<!-- footer -->
+	<footer role="contentinfo" id="footer" class="container">
+		<div class="footer-links-logo">
+			<div id="footer-links">
+				<ul class="ul-links">
+					<li class="link">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="link">
+						<a href="#video-div">About Us</a>
+					</li>
+					<li class="link">
+						<a href="#pricing">Tickets</a>
+					</li>
+				</ul>
+			</div>
+			<a class="footer-logo-container" href="index.html"><img class="footer-logo" src="images/logo.png"
+					alt="space flights logo"></a>
+		</div>
+		<p class="copyright">Copyright &copy; 2072 • Space Flights • Designed by&nbsp;<a class="arnas"
+				href="https://arnasne.github.io">Arnas</a></p>
+	</footer>
+</body>
+
+</html>

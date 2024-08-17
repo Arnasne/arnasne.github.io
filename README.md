@@ -1,3 +1,3 @@
 This is my personal website.
 
-You can see it live at https://arnasne.github.io
+You can visit it at https://arnasne.github.io

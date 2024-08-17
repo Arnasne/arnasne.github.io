@@ -1,0 +1,59 @@
+:root {
+  --bg-hero: #00aaf9;
+  --bg-body: #e6f4f1;
+  --brown: #74563a;
+  --light-blue: #94ddff;
+  --blue-hover: #75d3ff;
+  --text-dark: #001938;
+  --headings-one-two: #003171;
+  --Merriweather: 'Merriweather', serif;
+  --Sacramento: 'Sacramento', cursive;
+  --Montserrat: 'Montserrat', verdana, sans-serif;
+  --shadow: 0px 1px 3px #a6a6a6;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.portfolio-img {
+  border-radius: 10px;
+}
+
+.portfolio-p {
+  background-color: var(--light-blue);
+  padding: 1.2em 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: var(--text-dark);
+  font-weight: 600;
+  display: none;
+}
+
+/* media query */
+
+@media (max-width: 1000px) {
+  .portfolio-p {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .portfolio-p {
+    padding: 1em;
+  } */
+}
+
+@media (max-width: 426px) {
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

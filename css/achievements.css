@@ -1,0 +1,9 @@
+.cert-img-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.cert-img {
+  width: min(100%, 50rem);
+}

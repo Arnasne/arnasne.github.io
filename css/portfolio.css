@@ -1,0 +1,58 @@
+:root {
+  --bg-hero: #00aaf9;
+  --bg-body: #e6f4f1;
+  --brown: #74563a;
+  --light-blue: #94ddff;
+  --blue-hover: #75d3ff;
+  --text-dark: #001938;
+  --headings-one-two: #003171;
+  --Merriweather: 'Merriweather', serif;
+  --Sacramento: 'Sacramento', cursive;
+  --Montserrat: 'Montserrat', verdana, sans-serif;
+  --shadow: 0px 1px 3px #a6a6a6;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5rem;
+  gap: 2rem;
+}
+
+.portfolio-card {
+  transition: 0.2s;
+}
+
+.portfolio-card:hover {
+  scale: 103%;
+}
+
+.portfolio-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+}
+
+.portfolio-card-txt-box {
+  background-color: var(--light-blue);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0.6em 1.5em;
+  font-family: var(--Montserrat);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* media queries */
+
+@media (max-width: 1071px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 426px) {
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

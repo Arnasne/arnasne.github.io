@@ -1,0 +1,123 @@
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  nav .mobile-menu {
+    display: block;
+  }
+
+  .heading-hero {
+    margin-top: 7rem;
+  }
+
+  header .heading-two-style::before {
+    background-size: 90%;
+    top: 20rem;
+    width: 130px;
+    height: 38px;
+  }
+
+  header .heading-two-style::after {
+    background-size: 90%;
+    width: 130px;
+    height: 38px;
+  }
+
+  .bird-img {
+    max-width: 19rem;
+    right: 4rem;
+  }
+
+  .footer-links-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .heading-hero {
+    margin-top: 4rem;
+  }
+
+  header .heading-two-style {
+    margin-bottom: 1rem;
+  }
+
+  header .heading-two-style::before {
+    background-size: 95%;
+    width: 95px;
+    top: 15rem;
+  }
+
+  header .heading-two-style::after {
+    background-size: 95%;
+    width: 95px;
+    top: 4rem;
+  }
+
+  .avatar-img {
+    max-width: 6rem;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .hamburger {
+    right: 1.5rem;
+  }
+
+  header .heading-two-style::before {
+    background-size: 100%;
+    width: 77px;
+    height: 25px;
+    top: 13rem;
+    left: 50%;
+  }
+
+  header .heading-two-style::after {
+    background-size: 100%;
+    width: 77px;
+    height: 25px;
+    top: 4rem;
+  }
+
+  .bird-img {
+    max-width: 13rem;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  header .heading-two-style::after {
+    top: 3rem;
+  }
+
+  header .heading-two-style::before {
+    top: 11.5rem;
+  }
+
+  .heading-hero {
+    margin-top: 3rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .fa-bars {
+    font-size: 1rem;
+  }
+}

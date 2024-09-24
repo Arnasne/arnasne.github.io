@@ -1,3 +1,1 @@
-This is my personal website.
-
-You can visit it at https://arnasne.github.io
+Visit my personal website at: https://arnasne.github.io

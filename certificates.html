@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnas development</title>
+    <meta name="description"
+        content="Website development services with trusted solutions, responsive and modern design.">
+    <!-- Icon -->
+    <link rel="icon" href="tabicon.ico">
+    <!-- Fontawsome Icons -->
+    <script src="https://kit.fontawesome.com/f5401f39b3.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@400;600;800&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/certificates.css">
+    <title>Web Development</title>
+</head>
+
+<body>
+    <header class="tac">
+        <!-- navigation -->
+        <nav>
+
+            <a href="index.html"><img loading="lazy" class="avatar-nav-logo" src="./images/avatar-v.webp"
+                    alt="avatar image"></a>
+            <span class="status-offline"></span>
+
+            <!-- sidebar -->
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link main-nav-link active" href="certificates.html">Certificates</a></li>
+            </ul>
+            <!-- main navigation -->
+            <ul>
+                <li><a class="nav-link hideOnMobile main-nav-link" href="index.html"><i
+                            class="fa-solid fa-house"></i></a></li>
+                <li><a class="nav-link hideOnMobile main-nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link hideOnMobile main-nav-link active" href="certificates.html">Certificates</a></li>
+            </ul>
+
+            <li class="mobile-menu" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></i></a></li>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <h2 class="page-heading">My certificates</h2>
+        <div class="cert-img-container"><img loading="lazy" class="cert-img"
+                srcset="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp 800w"
+                src="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp" alt="certificate image">
+        </div>
+    </main>
+
+    <!-- mountains -->
+    <svg class="footer-mountains" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#003171" fill-opacity="1"
+            d="M0,160L240,192L480,288L720,224L960,320L1200,160L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z">
+        </path>
+    </svg>
+
+    <!-- footer -->
+    <footer class="container">
+        <div class="footer-soc-container">
+            <a href="https://github.com/Arnasne"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arnas-b-b58a92250/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-links-container">
+            <a class="footer-link" href="portfolio.html">Portfolio</a>
+            <a class="footer-link" href="#contact-me">Hire me</a>
+        </div>
+        <p class="copyright tac">© 2024 Arnas development</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

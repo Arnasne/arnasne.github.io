@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnas development</title>
+    <meta name="description"
+        content="Website development services with trusted solutions, responsive and modern design.">
+    <!-- Icon -->
+    <link rel="icon" href="tabicon.ico">
+    <!-- Fontawsome Icons -->
+    <script src="https://kit.fontawesome.com/f5401f39b3.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@400;600;800&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/certificates.css">
+    <title>Web Development</title>
+</head>
+
+<body>
+    <header class="tac">
+        <!-- navigation -->
+        <nav>
+
+            <a href="index.html"><img loading="lazy" class="avatar-nav-logo" src="./images/avatar-v.webp"
+                    alt="avatar image"></a>
+            <span class="status-offline"></span>
+
+
+            <!-- sidebar -->
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link main-nav-link" href="certificates.html">Certificates</a></li>
+            </ul>
+            <!-- main navigation -->
+            <ul>
+                <li><a class="nav-link hideOnMobile main-nav-link" href="index.html"><i
+                            class="fa-solid fa-house"></i></a></li>
+                <li><a class="nav-link hideOnMobile main-nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link hideOnMobile main-nav-link" href="certificates.html">Certificates</a></li>
+            </ul>
+
+            <li class="mobile-menu" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></i></a></li>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <!-- My portfolio -->
+        <h2 class="page-heading">My portfolio</h2>
+        <div class="portfolio-container tac">
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer" href="https://arnasne.github.io/huddle">
+                <span class="badge">New</span>
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/huddle-800.webp"
+                    alt="huddle thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Huddle landing page</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/recipe-page">
+                <span class="badge">New</span>
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Recipe-page-800.webp"
+                    alt="recipe page thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Recipe page</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/nftlanding">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/nftlanding-800.webp"
+                    alt="nftlanding thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>nftlanding</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/FCC-Product-Landing-Page">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Product-Landing-Page-800.webp"
+                    alt="landing page thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Space flights</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer" href="https://arnasne.github.io/tindog">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/tindog-800.webp"
+                    alt="tindog thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Tindog</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/qr-code-github.io">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/QR-code-800.webp"
+                    alt="qr code thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>QR code</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/search-page">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/moogle-800.webp"
+                    alt="search engine thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Search engine UI</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/Gluten-Free-Bakery">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Gluten-Free-Bakery-800.webp"
+                    alt="gluten free bakery thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Gluten Free Bakery</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/FCC-Survey-Form">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Registration-form-800.webp"
+                    alt="registration form thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Survey form</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/FCC-Technical-Documentation-Page/">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Technical-Documentation-Page-800.webp"
+                    alt="technical documentation thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Technical Documentation Page</p>
+                </div>
+            </a>
+            <a class="portfolio-card" target="_blank" rel="noopener noreferrer"
+                href="https://arnasne.github.io/FCC-Tribute-Page/">
+                <img loading="lazy" class="portfolio-img" src="./images/card-img/Nobel-Prize-800.webp"
+                    alt="tribute page thumbnail image">
+                <div class="portfolio-card-txt-box">
+                    <p>Tribute page</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- mountains -->
+    <svg class="footer-mountains" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#003171" fill-opacity="1"
+            d="M0,160L240,192L480,288L720,224L960,320L1200,160L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z">
+        </path>
+    </svg>
+
+    <!-- footer -->
+    <footer class="container">
+        <div class="footer-soc-container">
+            <a href="https://github.com/Arnasne"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arnas-b-b58a92250/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-links-container">
+            <a class="footer-link" href="portfolio.html">Portfolio</a>
+            <a class="footer-link" href="#contact-me">Hire me</a>
+        </div>
+        <p class="copyright tac">© 2024 Arnas development</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

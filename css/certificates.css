@@ -1,0 +1,16 @@
+.header-cert {
+  margin-bottom: 4rem;
+}
+
+.main-cert-container {
+  margin-bottom: 4rem;
+}
+
+.cert-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cert-img {
+  width: min(100%, 60rem);
+}

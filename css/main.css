@@ -316,7 +316,7 @@ header .heading-two-style::before {
 
 .introduction-text {
   max-width: 70ch;
-  margin: auto;
+/*   margin: 0 auto; */
   font-size: clamp(1.1rem, 3vw, 1.5rem);
   font-family: var(--Merriweather);
   text-align: left;

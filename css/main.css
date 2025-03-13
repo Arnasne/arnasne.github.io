@@ -310,14 +310,10 @@ header .heading-two-style::before {
   background-color: var(--light-blue);
 }
 
-.introduction-text-1 {
-  margin-bottom: 1rem;
-}
-
 .introduction-text {
   max-width: 70ch;
-/*   margin: 0 auto; */
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  margin: 0 auto;
+  font-size: 1rem;
   font-family: var(--Merriweather);
   text-align: left;
 }

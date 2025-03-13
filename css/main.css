@@ -318,6 +318,10 @@ header .heading-two-style::before {
   text-align: left;
 }
 
+.introduction-text-1 {
+  margin-bottom: 1rem;
+}
+
 /************* My tools section **************/
 
 .my-tools {

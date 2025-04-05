@@ -568,6 +568,5 @@ footer {
 .copyright {
   font-family: var(--Montserrat);
   color: white;
-  font-size: clamp(0.8rem, 3vw, 1rem);
-  font-size: 1rem;
+  font-size: 0.875rem;
 }

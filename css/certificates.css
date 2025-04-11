@@ -1,0 +1,22 @@
+.header-cert {
+  margin-bottom: 4rem;
+}
+
+.main-cert-container {
+  margin-bottom: 7.5rem;
+}
+
+.cert-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.cert-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cert-img {
+  width: min(100%, 60rem);
+}

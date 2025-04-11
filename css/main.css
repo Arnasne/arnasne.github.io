@@ -249,7 +249,7 @@ header .heading-two-style::after {
   top: 5rem;
   width: 150px;
   height: 50px;
-  animation: top-cloud 15s normal linear infinite;
+  animation: top-cloud 60s normal linear infinite;
 }
 
 header .heading-two-style::before {
@@ -260,7 +260,7 @@ header .heading-two-style::before {
   top: 23rem;
   width: 150px;
   height: 50px;
-  animation: bottom-cloud 14s normal linear infinite;
+  animation: bottom-cloud 55s normal linear infinite;
 }
 
 @keyframes top-cloud {

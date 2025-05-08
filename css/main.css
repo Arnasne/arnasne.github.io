@@ -26,6 +26,7 @@ f *::before {
 
 html,
 body {
+  scroll-behavior: smooth;
   color: var(--text-dark);
   word-wrap: break-word;
   margin: 0;

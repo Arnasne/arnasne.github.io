@@ -13,6 +13,10 @@
   --ff-oxanium: 'Oxanium', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url('images/stars2.jpg');
   background-position: 115%;

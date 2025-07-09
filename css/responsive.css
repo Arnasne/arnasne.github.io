@@ -1,44 +1,65 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1025px) {
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  nav {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .status-online {
+    left: 61px;
+  }
+
   @keyframes top-cloud {
     from {
       transform: translateX(52vw);
     }
 
     to {
-      transform: translateX(-84vw);
+      transform: translateX(-100vw);
     }
   }
 
   @keyframes bottom-cloud {
     from {
-      transform: translateX(70vw);
+      transform: translateX(80vw);
     }
 
     to {
-      transform: translateX(-46vw);
+      transform: translateX(-100vw);
     }
   }
 }
 
-@media (max-width: 768px) {
-  @keyframes top-cloud {
-    from {
-      transform: translateX(45vw);
-    }
-
-    to {
-      transform: translateX(-97vw);
-    }
+@media (max-width: 990px) {
+  .intro-section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(78vw);
-    }
+  .intro-section-txt {
+    max-width: 100%;
+  }
 
-    to {
-      transform: translateX(-46vw);
-    }
+  .intro-section-img {
+    max-width: 90%;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 4rem;
   }
 
   .hideOnMobile {
@@ -53,29 +74,54 @@
     margin-top: 7rem;
   }
 
+  header .heading-two-style::after {
+    top: 6rem;
+  }
+
   header .heading-two-style::before {
-    top: 20rem;
+    top: 21rem;
+  }
+
+  .page-greetings {
+    margin-bottom: 4rem;
+  }
+
+  .intro-text-container {
+    gap: 4rem;
+  }
+
+  .my-tools {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-examples-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .contact-me-img-container {
+    padding-top: 2em;
   }
 
   .bird-img {
-    max-width: 19rem;
+    max-width: 25rem;
     right: 4rem;
   }
 
-  .footer-links-container {
-    flex-direction: column;
-    text-align: center;
+  button,
+  .btn {
+    margin-bottom: 4rem;
   }
 }
 
 @media (max-width: 577px) {
-  .container {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-
   .heading-hero {
     margin-top: 4rem;
+  }
+
+  .introduction-text-top,
+  .introduction-text-bottom {
+    font-size: 1rem;
   }
 
   header .heading-two-style::after {
@@ -89,15 +135,27 @@
     background-size: 100%;
     width: 120px;
     height: 38px;
-    top: 17rem;
+    top: 19rem;
   }
 
   .avatar-img {
     max-width: 6rem;
   }
 
+  .intro-section-img {
+    max-width: 100%;
+  }
+
   .card {
     min-width: 100%;
+  }
+
+  .bird-img {
+    max-width: 20rem;
+  }
+
+  footer {
+    padding-top: 2.5em;
   }
 }
 
@@ -108,24 +166,18 @@
 }
 
 @media (max-width: 426px) {
-  @keyframes top-cloud {
-    from {
-      transform: translateX(61vw);
-    }
-
-    to {
-      transform: translateX(-112vw);
-    }
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(83vw);
-    }
+  nav {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 
-    to {
-      transform: translateX(-42vw);
-    }
+  .status-online {
+    left: 53px;
   }
 
   .sidebar {
@@ -134,6 +186,30 @@
 
   .hamburger {
     right: 1.5rem;
+  }
+
+  .intro-section-txt {
+    margin-top: 0;
+  }
+
+  @keyframes top-cloud {
+    from {
+      transform: translateX(100vw);
+    }
+
+    to {
+      transform: translateX(-115vw);
+    }
+  }
+
+  @keyframes bottom-cloud {
+    from {
+      transform: translateX(100vw);
+    }
+
+    to {
+      transform: translateX(-42vw);
+    }
   }
 
   header .heading-two-style::after {
@@ -147,7 +223,7 @@
     background-size: 85%;
     width: 120px;
     height: 38px;
-    top: 15rem;
+    top: 16rem;
   }
 
   .card {
@@ -159,12 +235,30 @@
   }
 
   .bird-img {
-    max-width: 13rem;
+    max-width: 17rem;
     right: 1.5rem;
+  }
+
+  .footer-links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-soc-container {
+    gap: 1.5rem;
+  }
+
+  #backToTop {
+    display: none !important;
   }
 }
 
 @media (max-width: 376px) {
+  .heading-two-style {
+    margin-bottom: 4rem;
+  }
+
   header .heading-two-style::after {
     top: 7rem;
   }
@@ -175,17 +269,17 @@
 
   @keyframes top-cloud {
     from {
-      transform: translateX(51vw);
+      transform: translateX(100vw);
     }
 
     to {
-      transform: translateX(-112vw);
+      transform: translateX(-120vw);
     }
   }
 
   @keyframes bottom-cloud {
     from {
-      transform: translateX(83vw);
+      transform: translateX(100vw);
     }
 
     to {
@@ -193,19 +287,19 @@
     }
   }
 
-  .header-headings-container {
-    margin-bottom: 6rem;
-  }
-
   .heading-hero {
-    margin-top: 8rem;
+    margin-top: 7rem;
   }
 }
 
 @media (max-width: 321px) {
+  header .heading-two-style::before {
+    top: 17rem;
+  }
+
   @keyframes top-cloud {
     from {
-      transform: translateX(50vw);
+      transform: translateX(100vw);
     }
 
     to {
@@ -215,11 +309,11 @@
 
   @keyframes bottom-cloud {
     from {
-      transform: translateX(83vw);
+      transform: translateX(100vw);
     }
 
     to {
-      transform: translateX(-50vw);
+      transform: translateX(-60vw);
     }
   }
 

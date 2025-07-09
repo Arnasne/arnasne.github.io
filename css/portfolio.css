@@ -1,27 +1,18 @@
-:root {
-  /* colors */
-  --bg-body: #e6f4f1;
-  --bg-hero: #00aaf9;
-  --light-blue: #94ddff;
-  --blue-hover: #75d3ff;
-  --headings-one-two: #003171;
-  --text-dark: #001938;
-  --red: #ff6b7b;
-  --brown: #74563a;
-  /* fonts */
-  --Merriweather: 'Merriweather', serif;
-  --Sacramento: 'Sacramento', cursive;
-  --Montserrat: 'Montserrat', verdana, sans-serif;
-  /* shadows */
-  --shadow: 0px 1px 3px #a6a6a6;
-  --shadow-hover: 0px 10px 50px #a6a6a6;
+body {
+  background-color: var(--main-body);
+}
+
+.header-portfolio {
+  margin-bottom: 4rem;
 }
 
 .portfolio-container {
+  max-width: 2560px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 0 5em;
   gap: 2rem;
+  margin-bottom: 7.5rem;
 }
 
 .portfolio-card {
@@ -31,12 +22,13 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
+  height: fit-content;
 }
 
 .badge {
   position: absolute;
-  top: 1.5rem;
-  left: 0.65rem;
+  top: 1rem;
+  left: 1rem;
   background-color: #ff7157;
   color: white;
   padding: 0.3rem 0.6rem;
@@ -45,19 +37,6 @@
   border-radius: 5px;
   z-index: 10;
 }
-
-/* .new::before {
-  content: 'New';
-  position: absolute;
-  left: 0.5rem;
-  top: 1.5rem;
-  padding: 0.3em;
-  color: tomato;
-  font-family: var(--Montserrat);
-  font-weight: 600;
-  background-color: var(--light-blue);
-  border-radius: 0.3rem;
-} */
 
 .portfolio-card:hover {
   scale: 103%;
@@ -71,32 +50,25 @@
   display: flex;
 }
 
-/* .new {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-} */
-
 .portfolio-card-txt-box {
   background-color: var(--light-blue);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  padding: 0.6em 1.5em;
+  padding: 0.6em 1em;
   font-family: var(--Montserrat);
   font-weight: 600;
   color: var(--headings-one-two);
 }
 
-/* media queries */
+/* portfolio media queries */
 
-@media (max-width: 1071px) {
+@media (max-width: 1025px) {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 540px) {
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
   }

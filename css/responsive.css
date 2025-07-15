@@ -10,6 +10,10 @@
     padding-right: 2em;
   }
 
+  .my-tools {
+    padding: inherit;
+  }
+
   nav {
     padding-left: 2em;
     padding-right: 2em;
@@ -44,7 +48,7 @@
   .intro-section-container {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .intro-section-txt {
@@ -53,7 +57,10 @@
 
   .intro-section-img {
     max-width: 90%;
-    order: 2;
+  }
+
+  .order-change-mobile {
+    order: 1;
   }
 }
 
@@ -87,7 +94,7 @@
   }
 
   .intro-text-container {
-    gap: 4rem;
+    gap: 5rem;
   }
 
   .my-tools {
@@ -169,6 +176,10 @@
   .container {
     padding-left: 1.5em;
     padding-right: 1.5em;
+  }
+
+  .my-tools {
+    padding: inherit;
   }
 
   nav {

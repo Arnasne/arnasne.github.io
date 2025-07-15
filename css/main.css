@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .page-heading {
   font-family: var(--Montserrat);
-  font-size: clamp(1.8rem, 9vw, 3rem);
+  font-size: clamp(1.8rem, 7vw, 2.625rem);
   color: var(--headings-one-two);
   margin-bottom: 1.25rem;
 }
@@ -136,10 +136,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .heading-three-style {
   font-family: var(--Montserrat);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.35rem, 3vw, 1.625rem);
   color: var(--headings-one-two);
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /************* navigation **************/
@@ -336,7 +336,8 @@ header .heading-two-style::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 7.5rem;
+  margin: 0 auto 7.5rem auto;
+  max-width: 60ch;
 }
 
 .avatar-img {
@@ -348,7 +349,7 @@ header .heading-two-style::before {
 
 .intro-text-container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   display: flex;
   flex-direction: column;
   gap: 7.5rem;
@@ -362,7 +363,7 @@ header .heading-two-style::before {
 
 .intro-section-txt {
   margin-top: 2rem;
-  max-width: 45%;
+  max-width: 37%;
 }
 
 .intro-section-img {
@@ -373,12 +374,12 @@ header .heading-two-style::before {
 
 .my-tools {
   margin-bottom: 7.5rem;
+  padding: inherit;
 }
 
 .tools-row-marquee {
   width: 100%;
   overflow: hidden;
-  position: relative;
   white-space: nowrap;
 }
 
@@ -388,13 +389,12 @@ header .heading-two-style::before {
   align-items: center;
   gap: 2rem;
   max-width: 1440px;
-  margin: 0 auto;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 
   100% {
@@ -414,13 +414,12 @@ header .heading-two-style::before {
 
 .tools-icon {
   max-width: 4rem;
-  /* margin-bottom: 1rem; */
 }
 
 .tools-card-txt {
   color: var(--headings-one-two);
   font-weight: 600;
-  /* font-size: 1.125rem; */
+  font-size: 1.125rem;
 }
 
 .tools-description {
@@ -473,8 +472,9 @@ header .heading-two-style::before {
 }
 
 .section-heading-text-container {
-  max-width: 60ch;
+  max-width: 65ch;
   margin: 0 auto 2rem;
+  padding: 0 1.5em;
 }
 
 .card-row {
@@ -490,7 +490,7 @@ header .heading-two-style::before {
   height: min(31.5rem, 33.75rem);
   background-color: var(--bg-hero);
   border-radius: 2rem;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0;
   box-shadow: var(--shadow);
   transition: 0.2s;
 }
@@ -502,7 +502,7 @@ header .heading-two-style::before {
 
 .card-heading {
   padding-top: 8px;
-  font-size: clamp(1rem, 6vw, 1.8rem);
+  font-size: clamp(1rem, 5vw, 1.6rem);
   font-weight: 600;
   font-family: var(--Montserrat);
   color: var(--headings-one-two);

@@ -349,7 +349,7 @@ header .heading-two-style::before {
 
 .intro-text-container {
   max-width: 1440px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 3rem;
   display: flex;
   flex-direction: column;
   gap: 7.5rem;
@@ -387,9 +387,14 @@ header .heading-two-style::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.375rem;
   max-width: 1440px;
   animation: marquee 20s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.tools-row-2 {
+  display: none;
 }
 
 @keyframes marquee {
@@ -426,37 +431,6 @@ header .heading-two-style::before {
   font-size: 0.875rem;
 }
 
-/* icons animations */
-
-.img-card:hover {
-  -webkit-animation: icon-rotate 0.4s linear;
-  animation: icon-rotate 0.4s linear;
-}
-
-@-webkit-keyframes icon-rotate {
-  0% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-  }
-
-  100% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-
-@keyframes icon-rotate {
-  0% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-  }
-
-  100% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-
 .bootstrap-icon {
   max-width: 4.6rem;
 }
@@ -469,11 +443,13 @@ header .heading-two-style::before {
 
 .portfolio-examples-container {
   background-color: var(--bg-accent);
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 }
 
 .section-heading-text-container {
   max-width: 65ch;
-  margin: 0 auto 2rem;
+  margin: 3rem auto 2rem;
   padding: 0 1.5em;
 }
 

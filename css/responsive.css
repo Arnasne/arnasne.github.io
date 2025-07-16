@@ -66,7 +66,7 @@
 
 @media (max-width: 768px) {
   header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .hideOnMobile {
@@ -98,16 +98,29 @@
   }
 
   .my-tools {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
-  .portfolio-examples-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .tools-row-marquee-2 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  .contact-me-img-container {
-    padding-top: 2em;
+  .tools-row-2 {
+    display: flex;
+    gap: 1rem;
+    animation: marquee-2 20s linear infinite;
+  }
+
+  @keyframes marquee-2 {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .bird-img {
@@ -117,7 +130,12 @@
 
   button,
   .btn {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-examples-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 
@@ -180,6 +198,22 @@
 
   .my-tools {
     padding: inherit;
+  }
+
+  .tools-row {
+    gap: 1rem;
+  }
+
+  .img-card {
+    padding: 0.5em 1.5em 0.5em 0.5em;
+  }
+
+  .tools-icon {
+    max-width: 3.5rem;
+  }
+
+  .tools-card-txt {
+    font-size: 1rem;
   }
 
   nav {

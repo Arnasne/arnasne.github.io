@@ -375,6 +375,8 @@ header .heading-two-style::before {
 .my-tools {
   margin-bottom: 7.5rem;
   padding: inherit;
+  max-width: 1587px;
+  margin: 0 auto 3rem;
 }
 
 .tools-row-marquee {
@@ -388,8 +390,8 @@ header .heading-two-style::before {
   justify-content: center;
   align-items: center;
   gap: 1.375rem;
-  max-width: 1440px;
-  animation: marquee 20s linear infinite;
+  width: max-content;
+  animation: marquee 30s linear infinite;
   margin-bottom: 1rem;
 }
 
@@ -403,7 +405,7 @@ header .heading-two-style::before {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -449,7 +451,7 @@ header .heading-two-style::before {
 
 .section-heading-text-container {
   max-width: 65ch;
-  margin: 3rem auto 2rem;
+  margin: 0 auto 2rem;
   padding: 0 1.5em;
 }
 

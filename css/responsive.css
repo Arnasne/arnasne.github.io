@@ -110,12 +110,13 @@
   .tools-row-2 {
     display: flex;
     gap: 1rem;
-    animation: marquee-2 20s linear infinite;
+    width: max-content;
+    animation: marquee-2 30s linear infinite;
   }
 
   @keyframes marquee-2 {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
 
     100% {

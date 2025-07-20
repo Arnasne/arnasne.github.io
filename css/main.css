@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 nav {
   max-width: 1440px;
-  margin: 0 auto;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   margin-bottom: 5rem;
@@ -329,7 +329,7 @@ header .heading-two-style::before {
 /************* main **************/
 
 .text {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
 .page-greetings {
@@ -373,10 +373,9 @@ header .heading-two-style::before {
 /************* My tools section **************/
 
 .my-tools {
-  margin-bottom: 7.5rem;
+  margin: 3rem auto 7.5rem;
   padding: inherit;
   max-width: 1587px;
-  margin: 0 auto 3rem;
 }
 
 .tools-row-marquee {
@@ -553,7 +552,7 @@ header .heading-two-style::before {
 form {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-inline: auto;
   gap: 1rem;
   max-width: 500px;
 }
@@ -593,10 +592,11 @@ button,
   border-radius: 2rem;
   font-family: 'Montserrat', sans-serif;
   box-shadow: var(--shadow);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 7.5rem;
   transition: 0.2s;
+  letter-spacing: 1px;
 }
 
 button:hover {
@@ -662,7 +662,7 @@ footer {
 }
 
 .fa-brands {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
   transition: 0.2s;

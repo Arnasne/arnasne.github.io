@@ -22,26 +22,6 @@
   .status-online {
     left: 61px;
   }
-
-  @keyframes top-cloud {
-    from {
-      transform: translateX(52vw);
-    }
-
-    to {
-      transform: translateX(-100vw);
-    }
-  }
-
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(80vw);
-    }
-
-    to {
-      transform: translateX(-100vw);
-    }
-  }
 }
 
 @media (max-width: 990px) {
@@ -81,14 +61,6 @@
     margin-top: 7rem;
   }
 
-  header .heading-two-style::after {
-    top: 6rem;
-  }
-
-  header .heading-two-style::before {
-    top: 21rem;
-  }
-
   .page-greetings {
     margin-bottom: 4rem;
   }
@@ -107,11 +79,15 @@
     white-space: nowrap;
   }
 
+  .tools-row {
+    animation: marquee 90s linear infinite;
+  }
+
   .tools-row-2 {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: marquee-2 30s linear infinite;
+    animation: marquee-2 90s linear infinite;
   }
 
   @keyframes marquee-2 {
@@ -141,6 +117,18 @@
 }
 
 @media (max-width: 577px) {
+  .cloud {
+    transform: scale(0.7);
+  }
+
+  .cloud1 {
+    top: 18rem;
+  }
+
+  .cloud2 {
+    top: 20rem;
+  }
+
   .heading-hero {
     margin-top: 4rem;
   }
@@ -148,20 +136,6 @@
   .introduction-text-top,
   .introduction-text-bottom {
     font-size: 1rem;
-  }
-
-  header .heading-two-style::after {
-    background-size: 100%;
-    width: 120px;
-    height: 38px;
-    top: 5rem;
-  }
-
-  header .heading-two-style::before {
-    background-size: 100%;
-    width: 120px;
-    height: 38px;
-    top: 19rem;
   }
 
   .avatar-img {
@@ -186,8 +160,12 @@
 }
 
 @media (max-width: 520px) {
-  header .heading-two-style::before {
-    top: 16rem;
+  .cloud1 {
+    top: 17rem;
+  }
+
+  .cloud2 {
+    top: 19rem;
   }
 }
 
@@ -195,6 +173,14 @@
   .container {
     padding-left: 1.5em;
     padding-right: 1.5em;
+  }
+
+  .cloud1 {
+    top: 16rem;
+  }
+
+  .cloud2 {
+    top: 17rem;
   }
 
   .my-tools {
@@ -238,40 +224,6 @@
     margin-top: 0;
   }
 
-  @keyframes top-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-115vw);
-    }
-  }
-
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-42vw);
-    }
-  }
-
-  header .heading-two-style::after {
-    background-size: 85%;
-    width: 120px;
-    height: 38px;
-    top: 5rem;
-  }
-
-  header .heading-two-style::before {
-    background-size: 85%;
-    width: 120px;
-    height: 38px;
-    top: 16rem;
-  }
-
   .card {
     height: min(440px, 540px);
   }
@@ -301,66 +253,18 @@
 }
 
 @media (max-width: 376px) {
-  .heading-two-style {
-    margin-bottom: 4rem;
-  }
-
-  header .heading-two-style::after {
-    top: 7rem;
-  }
-
-  header .heading-two-style::before {
-    top: 18rem;
-  }
-
-  @keyframes top-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-120vw);
-    }
-  }
-
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-46vw);
-    }
-  }
-
-  .heading-hero {
-    margin-top: 7rem;
+  .cloud1 {
+    top: 15rem;
   }
 }
 
 @media (max-width: 321px) {
-  header .heading-two-style::before {
-    top: 17rem;
+  .cloud1 {
+    top: 14rem;
   }
 
-  @keyframes top-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-117vw);
-    }
-  }
-
-  @keyframes bottom-cloud {
-    from {
-      transform: translateX(100vw);
-    }
-
-    to {
-      transform: translateX(-60vw);
-    }
+  .cloud2 {
+    top: 15rem;
   }
 
   .btn {

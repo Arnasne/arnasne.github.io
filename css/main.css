@@ -306,6 +306,7 @@ header {
 .cloud1 {
   top: 22rem;
   animation-duration: 90s;
+  animation-delay: 20s;
   opacity: 0.7;
 }
 .cloud2 {
@@ -313,47 +314,9 @@ header {
   animation-duration: 50s;
 }
 
-/* header .heading-two-style::after {
-  content: '';
-  background-image: url('/images/cloud.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 7rem;
-  width: 150px;
-  height: 50px;
-  animation: top-cloud 60s normal linear infinite;
+.cloud3 {
+  animation-delay: 10s;
 }
-
-header .heading-two-style::before {
-  content: '';
-  background-image: url('/images/cloud.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 23rem;
-  width: 150px;
-  height: 50px;
-  animation: bottom-cloud 55s normal linear infinite;
-} */
-
-/* @keyframes top-cloud {
-  0% {
-    transform: translateX(50vw);
-  }
-
-  100% {
-    transform: translateX(-100vw);
-  }
-}
-
-@keyframes bottom-cloud {
-  0% {
-    transform: translateX(63vw);
-  }
-
-  100% {
-    transform: translateX(-100vw);
-  }
-} */
 
 .mountain {
   margin: auto;

@@ -260,6 +260,10 @@
   .cloud1 {
     top: 15rem;
   }
+
+  .cloud2 {
+    top: 16rem;
+  }
 }
 
 @media (max-width: 321px) {

@@ -1,13 +1,13 @@
 :root {
   /* colors */
   --main-body: #f4fcff;
+  --text-color: #4d4d4d;
   --bg-accent: #d4f1ff;
   --bg-hero: #00aaf9;
   --light-blue: #94ddff;
   --blue-hover: #75d3ff;
   --headings-one-two: #002f6c;
   --active-hover-color: #0047a3;
-  --text-dark: #002f6c;
   --red: #ff6b7b;
   --green: #05ac9a;
   --green-light: #33c9ba;
@@ -328,6 +328,7 @@ header {
 .text {
   font-size: clamp(1rem, 1vw, 1.125rem);
   max-width: 65ch;
+  color: var(--text-color);
 }
 
 .page-greetings {

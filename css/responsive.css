@@ -46,6 +46,14 @@
   .order-change-mobile {
     order: 1;
   }
+
+  .intro-section-txt:nth-child(odd) {
+    margin-left: inherit;
+  }
+
+  .intro-section-txt:nth-child(even) {
+    margin-right: inherit;
+  }
 }
 
 @media (max-width: 768px) {

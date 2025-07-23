@@ -486,7 +486,7 @@ header {
 }
 
 .card:hover {
-  scale: 103%;
+  transform: scale(1.03);
   box-shadow: var(--shadow-hover);
 }
 
@@ -615,7 +615,7 @@ button,
 button:hover {
   background-color: var(--green-light);
   box-shadow: var(--shadow-hover);
-  scale: 103%;
+  transform: scale(1.03);
 }
 
 /************* footer **************/

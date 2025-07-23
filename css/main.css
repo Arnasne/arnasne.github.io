@@ -1,12 +1,12 @@
 :root {
   /* colors */
   --main-body: #f4fcff;
-  --text-color: #4d4d4d;
+  --text-color: #5f5f5f;
   --bg-accent: #d4f1ff;
   --bg-hero: #00aaf9;
   --light-blue: #94ddff;
   --blue-hover: #75d3ff;
-  --headings-one-two: #002f6c;
+  --dark-blue: #002f6c;
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
   --green: #05ac9a;
@@ -88,7 +88,7 @@ p {
 
 #backToTop:hover {
   background: var(--blue-hover);
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
 }
 
 /* vertical scrollbar */
@@ -102,7 +102,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--headings-one-two);
+  background-color: var(--dark-blue);
   border-radius: 5rem;
   border: 4px solid var(--blue-hover);
 }
@@ -115,8 +115,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .heading-hero {
   font-family: var(--Sacramento);
-  color: var(--headings-one-two);
-  font-size: clamp(3rem, 15vw, 6.5rem);
+  color: var(--dark-blue);
+  font-size: clamp(3rem, 18vw, 6.5rem);
   margin-top: 8rem;
   line-height: 1;
 }
@@ -124,14 +124,14 @@ body::-webkit-scrollbar-thumb:hover {
 .page-heading {
   font-family: var(--Montserrat);
   font-size: clamp(1.8rem, 7vw, 2.625rem);
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   margin-bottom: 1rem;
 }
 
 .heading-two-style {
   font-family: var(--Montserrat);
-  font-size: clamp(1rem, 5vw, 2rem);
-  color: var(--headings-one-two);
+  font-size: clamp(1rem, 5.7vw, 2rem);
+  color: var(--dark-blue);
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb:hover {
 .heading-three-style {
   font-family: var(--Montserrat);
   font-size: clamp(1.35rem, 3vw, 1.625rem);
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -190,7 +190,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
@@ -260,7 +260,7 @@ nav .mobile-menu {
 
 .sidebar .active:hover {
   background-color: var(--blue-hover);
-  color: var(--headings-one-two);
+  color: var(--active-hover-color);
 }
 
 .fa-house {
@@ -269,7 +269,7 @@ nav .mobile-menu {
 
 .fa-xmark,
 .fa-bars {
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   font-size: 1.3rem;
   display: flex;
 }
@@ -436,7 +436,7 @@ header {
 }
 
 .tools-card-txt {
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   font-weight: 600;
   font-size: 1.125rem;
 }
@@ -495,7 +495,7 @@ header {
   font-size: clamp(1rem, 5vw, 1.6rem);
   font-weight: 600;
   font-family: var(--Montserrat);
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   text-transform: uppercase;
   letter-spacing: -1px;
 }
@@ -532,7 +532,7 @@ header {
 
 .txt-open-all {
   font-size: 1rem;
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
 }
 
 .txt-open-all:hover {
@@ -540,7 +540,7 @@ header {
 }
 
 .fa-angle-right {
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   font-size: 0.8rem;
 }
 
@@ -580,17 +580,17 @@ textarea {
   font-size: 1rem;
   font-family: var(--Montserrat);
   outline-color: var(--bg-hero);
-  color: var(--headings-one-two);
+  color: var(--dark-blue);
   box-shadow: var(--shadow);
 }
 
 input::placeholder {
-  color: var(--bg-hero);
+  color: var(--text-color);
   opacity: 1;
 }
 
 textarea::placeholder {
-  color: var(--bg-hero);
+  color: var(--text-color);
   opacity: 1;
 }
 
@@ -637,7 +637,7 @@ footer {
 footer {
   padding-top: 3em;
   padding-bottom: 1.5em;
-  background-color: var(--headings-one-two);
+  background-color: var(--dark-blue);
 }
 
 .footer-links-soc {

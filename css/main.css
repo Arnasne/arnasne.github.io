@@ -1,12 +1,13 @@
 :root {
   /* colors */
+  --text-color: #002f6c;
+  --heading-color: #0047a3;
+  --dark-blue: #002f6c;
   --main-body: #f4fcff;
-  --text-color: #6b6b6b;
   --bg-accent: #d4f1ff;
   --bg-hero: #00aaf9;
   --light-blue: #94ddff;
   --blue-hover: #75d3ff;
-  --dark-blue: #002f6c;
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
   --green: #05ac9a;
@@ -290,8 +291,25 @@ header {
   background-image: url('/images/cloud.png');
   background-repeat: no-repeat;
   background-size: contain;
-  animation: cloud-move 70s linear infinite;
+  animation: cloud-move linear infinite;
   z-index: 2;
+}
+
+.cloud1 {
+  animation-duration: 100s;
+  animation-delay: 50s;
+  transform: scale(0.9);
+  top: 21rem;
+  opacity: 0.7;
+}
+.cloud2 {
+  animation-duration: 80s;
+  top: 23rem;
+}
+
+.cloud3 {
+  animation-duration: 90s;
+  animation-delay: 30s;
 }
 
 @keyframes cloud-move {
@@ -301,21 +319,6 @@ header {
   100% {
     left: -200px;
   }
-}
-
-.cloud1 {
-  top: 22rem;
-  animation-duration: 90s;
-  animation-delay: 20s;
-  opacity: 0.7;
-}
-.cloud2 {
-  top: 23rem;
-  animation-duration: 50s;
-}
-
-.cloud3 {
-  animation-delay: 10s;
 }
 
 .mountain {
@@ -358,7 +361,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 7rem;
+  gap: 5rem;
 }
 
 .intro-section-txt {
@@ -443,6 +446,7 @@ header {
 
 .tools-description {
   font-size: 0.875rem;
+  color: var(--text-color);
 }
 
 .bootstrap-icon {
@@ -585,12 +589,12 @@ textarea {
 }
 
 input::placeholder {
-  color: var(--text-color);
+  color: var(--bg-hero);
   opacity: 1;
 }
 
 textarea::placeholder {
-  color: var(--text-color);
+  color: var(--bg-hero);
   opacity: 1;
 }
 
@@ -637,7 +641,7 @@ footer {
 footer {
   padding-top: 3em;
   padding-bottom: 1.5em;
-  background-color: var(--dark-blue);
+  background-color: var(--active-hover-color);
 }
 
 .footer-links-soc {

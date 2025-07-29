@@ -31,10 +31,8 @@ body {
 .cert-img {
   width: min(100%, 64rem);
   box-shadow: var(--shadow);
-  transition: 0.2s;
 }
 
 .cert-img:hover {
-  transform: scale(1.2);
-  box-shadow: var(--shadow-hover);
+  cursor: pointer;
 }

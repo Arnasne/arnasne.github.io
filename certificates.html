@@ -55,16 +55,18 @@
         <div class="cert-container">
             <div class="two-certs">
                 <div class="cert-img-container"><img loading="lazy" class="cert-img"
-                        srcset="./images/fasttrack.webp 800w" src="./images/fasttrack.webp" alt="certificate image">
+                        srcset="./images/fasttrack.webp 800w" src="./images/fasttrack.webp"
+                        data-full="./images/fasttrack.webp" alt="certificate image">
                 </div>
                 <div class="cert-img-container"><img loading="lazy" class="cert-img"
                         srcset="./images/FastTrack-Cert-Pazymiai.webp 800w" src="./images/FastTrack-Cert-Pazymiai.webp"
-                        alt="certificate image">
+                        data-full="./images/FastTrack-Cert-Pazymiai.webp" alt="certificate image">
                 </div>
             </div>
             <div class="cert-img-container"><img loading="lazy" class="cert-img"
                     srcset="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp 800w"
-                    src="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp" alt="certificate image">
+                    src="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp"
+                    data-full="./images/FreeCodeCamp-ResponsiveWebDesignCertificate.webp" alt="certificate image">
             </div>
         </div>
     </main>
@@ -86,6 +88,11 @@
         </div>
         <p class="copyright tac">© 2025 Arnas development</p>
     </footer>
+
+    <div id="img-modal" class="img-modal">
+        <span class="img-modal-close" onclick="closeModal()">&times;</span>
+        <img class="img-modal-content" id="img-modal-img" alt="Full size preview">
+    </div>
 
     <script src="script.js"></script>
 

@@ -26,32 +26,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Portfolio card click event
-// Open image in modal if no link is present
-document.querySelectorAll('.portfolio-card').forEach((card) => {
-  // Tik kortelėms be nuorodos
-  if (!card.hasAttribute('href')) {
-    card.addEventListener('click', function (e) {
-      e.preventDefault();
-      const img = this.querySelector('.portfolio-img');
-      if (img) {
-        const fullImg = img.getAttribute('data-full') || img.src;
-        const modal = document.getElementById('img-modal');
-        const modalImg = document.getElementById('img-modal-img');
-        modalImg.src = fullImg;
-        modal.style.display = 'flex';
-      }
-    });
-  }
+// Universal modal for images
+document.querySelectorAll('img[data-full]').forEach((img) => {
+  img.addEventListener('click', function (e) {
+    e.preventDefault();
+    const modal = document.getElementById('img-modal');
+    const modalImg = document.getElementById('img-modal-img');
+    if (modal && modalImg) {
+      modalImg.src = this.getAttribute('data-full') || this.src;
+      modal.style.display = 'flex';
+    }
+  });
 });
 
-function closeModal() {
-  document.getElementById('img-modal').style.display = 'none';
-}
-
+// Modal close
 const imgModal = document.getElementById('img-modal');
 if (imgModal) {
   imgModal.addEventListener('click', function (e) {
     if (e.target === this) closeModal();
   });
+}
+
+function closeModal() {
+  const modal = document.getElementById('img-modal');
+  if (modal) modal.style.display = 'none';
 }

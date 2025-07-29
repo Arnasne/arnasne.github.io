@@ -299,7 +299,7 @@ header {
   animation-duration: 100s;
   animation-delay: 50s;
   transform: scale(0.9);
-  top: 21rem;
+  top: 23rem;
   opacity: 0.7;
 }
 .cloud2 {
@@ -351,7 +351,7 @@ header {
 
 .intro-text-container {
   max-width: 1440px;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 7.5rem;
@@ -389,7 +389,7 @@ header {
 /************* My tools section **************/
 
 .my-tools {
-  margin: 4rem auto 7.5rem;
+  margin: 0 auto 7.5rem;
   padding: inherit;
   max-width: 1587px;
 }
@@ -481,7 +481,6 @@ header {
 
 .card {
   min-width: 25rem;
-  height: min(31.5rem, 33.75rem);
   background-color: var(--bg-hero);
   border-radius: 2rem;
   padding: 0.5em 0.5em 0;
@@ -495,8 +494,8 @@ header {
 }
 
 .card-heading {
-  padding-top: 8px;
-  font-size: clamp(1rem, 5vw, 1.6rem);
+  padding: 12px;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: 600;
   font-family: var(--Montserrat);
   color: var(--dark-blue);
@@ -505,7 +504,7 @@ header {
 }
 
 .card-inner {
-  width: 100%;
+  max-width: 100%;
   height: 440px;
   border-radius: 1.5rem;
   background-size: cover;
@@ -526,7 +525,7 @@ header {
 }
 
 .inner3 {
-  background-image: url(/images/card-img/tindog-full.webp);
+  background-image: url(/images/card-img/eshop-desktop-handmade.webp);
 }
 
 .card-inner:hover ~ .card-heading {
@@ -710,8 +709,8 @@ footer {
 }
 
 .img-modal-content {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 110vw;
+  max-height: 98vh;
   border-radius: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }

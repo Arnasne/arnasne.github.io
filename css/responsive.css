@@ -19,6 +19,14 @@
     padding-right: 2em;
   }
 
+  .intro-text-container {
+    margin-bottom: 3rem;
+  }
+
+  .my-tools {
+    margin-top: 3rem;
+  }
+
   .my-tools {
     padding: inherit;
   }
@@ -63,7 +71,7 @@
 
 @media (max-width: 768px) {
   header {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .hideOnMobile {
@@ -79,7 +87,7 @@
   }
 
   .page-greetings {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   .intro-text-container {
@@ -91,7 +99,7 @@
   }
 
   .my-tools {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .tools-row-marquee-2 {
@@ -132,9 +140,9 @@
   }
 
   button,
-  .btn .portfolio-container,
+  .portfolio-container,
   .main-cert-container {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   .cert-img:hover {

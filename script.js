@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Universal modal for images
 document.addEventListener('DOMContentLoaded', function () {
-  // Universal modal for images
   document.querySelectorAll('img[data-full]').forEach((img) => {
     img.addEventListener('click', function (e) {
       e.preventDefault();
@@ -53,3 +53,23 @@ function closeModal() {
   const modal = document.getElementById('img-modal');
   if (modal) modal.style.display = 'none';
 }
+
+// Accordion functionality
+const accordionItems = document.querySelectorAll('.accordion-item');
+accordionItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+const revealElements = document.querySelectorAll('.reveal');
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  revealElements.forEach((el) => {
+    const boxTop = el.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) el.classList.add('active');
+    else el.classList.remove('active');
+  });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);

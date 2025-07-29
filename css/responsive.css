@@ -191,6 +191,12 @@
   footer {
     padding-top: 2.5em;
   }
+
+  /* Image modal close button */
+  .img-modal-close {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -311,6 +317,11 @@
 
   .fa-bars {
     font-size: 1rem;
+  }
+
+  /* Image modal content */
+  .img-modal-content {
+    max-width: 98vw;
   }
 }
 

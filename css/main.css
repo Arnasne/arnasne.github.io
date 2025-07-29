@@ -547,6 +547,63 @@ header {
   font-size: 0.8rem;
 }
 
+/* FAQ Accordion */
+
+.faq {
+  max-width: 60rem;
+  margin-inline: auto;
+  margin-bottom: 7.5rem;
+}
+
+.accordion {
+  margin-top: 2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.accordion-question {
+  font-weight: 600;
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.accordion-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 0.5rem;
+  color: var(--dark-blue);
+}
+
+.reveal,
+.active {
+  background-color: var(--main-body);
+}
+
+.reveal,
+.active:hover {
+  background-color: var(--main-body);
+}
+
+.accordion-item.active .accordion-question::after {
+  content: '-';
+}
+
+.accordion-item.active .accordion-answer {
+  max-height: 200px;
+}
+
 /************* Get In Touch section **************/
 
 .contact-me-img-container {

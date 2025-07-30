@@ -288,6 +288,7 @@ header {
   left: 100vw;
   width: 150px;
   height: 50px;
+  transform: scale(0.7);
   background-image: url('/images/cloud.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -298,7 +299,7 @@ header {
 .cloud1 {
   animation-duration: 100s;
   animation-delay: 50s;
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
   top: 23rem;
   opacity: 0.7;
 }
@@ -504,6 +505,7 @@ header {
 .card:hover .card-inner {
   transform: translateY(-11%);
   height: 111%;
+  z-index: 1;
 }
 
 .card-heading {

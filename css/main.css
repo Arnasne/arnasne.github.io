@@ -479,7 +479,7 @@ header {
 }
 
 .card {
-  min-width: 25rem;
+  width: 25rem;
   background-color: var(--bg-hero);
   border-radius: 2rem;
   padding: 0.5em 0.5em 0;

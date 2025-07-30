@@ -215,8 +215,13 @@
     padding-right: 1em;
   }
 
+  .cloud {
+    transform: scale(0.6);
+  }
+
   .cloud1 {
     top: 16rem;
+    transform: scale(0.5);
   }
 
   .cloud2 {

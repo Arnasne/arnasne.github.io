@@ -482,9 +482,10 @@ header {
   width: 25rem;
   background-color: var(--bg-hero);
   border-radius: 2rem;
-  padding: 0.5em 0.5em 0;
+  padding: 0.5em 0.5em 3rem;
   box-shadow: var(--shadow);
   transition: 0.2s;
+  position: relative;
 }
 
 .card:hover {
@@ -498,11 +499,12 @@ header {
   border-radius: 1.5rem;
   background-size: cover;
   transition: 0.3s;
+  transform: translateY(0);
 }
 
-.card-inner:hover {
-  height: 100%;
-  transform: translateY(-10%);
+.card:hover .card-inner {
+  transform: translateY(-11%);
+  height: 111%;
 }
 
 .inner1 {
@@ -517,12 +519,12 @@ header {
   background-image: url(/images/card-img/eshop-desktop-handmade.webp);
 }
 
-.card-inner:hover ~ .card-heading {
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
 .card-heading {
+  position: absolute;
+  top: 33.4rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 2;
   padding: 12px;
   font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: 600;

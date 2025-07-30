@@ -214,13 +214,13 @@ nav .mobile-menu {
   padding: 0.5em 0.8em;
 }
 
-.active {
+.nav-active {
   background-color: var(--light-blue);
   padding: 0.7em;
   border-radius: 2rem;
 }
 
-.active:hover {
+.nav-active:hover {
   background-color: var(--blue-hover);
   color: var(--active-hover-color);
 }
@@ -255,11 +255,11 @@ nav .mobile-menu {
   background-color: var(--bg-accent);
 }
 
-.sidebar .active {
+.sidebar .nav-active {
   background-color: var(--light-blue);
 }
 
-.sidebar .active:hover {
+.sidebar .nav-active:hover {
   background-color: var(--blue-hover);
   color: var(--active-hover-color);
 }

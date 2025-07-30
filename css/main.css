@@ -507,18 +507,6 @@ header {
   height: 111%;
 }
 
-.inner1 {
-  background-image: url(/images/card-img/nftlanding-desktop-full.webp);
-}
-
-.inner2 {
-  background-image: url(/images/card-img/landing-mobile.webp);
-}
-
-.inner3 {
-  background-image: url(/images/card-img/eshop-desktop-handmade.webp);
-}
-
 .card-heading {
   position: absolute;
   top: 33.4rem;
@@ -532,6 +520,18 @@ header {
   color: var(--dark-blue);
   text-transform: uppercase;
   letter-spacing: -1px;
+}
+
+.inner1 {
+  background-image: url(/images/card-img/nftlanding-desktop-full.webp);
+}
+
+.inner2 {
+  background-image: url(/images/card-img/landing-mobile.webp);
+}
+
+.inner3 {
+  background-image: url(/images/card-img/eshop-desktop-handmade.webp);
 }
 
 .txt-open-all {

@@ -260,6 +260,20 @@
     right: 1.5rem;
   }
 
+  .card {
+    height: min(32rem, 33.75rem);
+  }
+
+  .card-inner {
+    height: 28.8rem;
+  }
+
+  .card-heading {
+    top: 29rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
   .bird-img {
     max-width: 17rem;
     right: 1.5rem;

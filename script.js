@@ -9,7 +9,7 @@ function hideSidebar() {
 }
 
 // Back to top button
-// Show button when scrolled down 300px
+// Show button when scrolled down 1000px
 document.addEventListener('DOMContentLoaded', function () {
   const backToTopBtn = document.getElementById('backToTop');
   if (backToTopBtn) {

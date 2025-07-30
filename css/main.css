@@ -124,7 +124,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .page-heading {
   font-family: var(--Montserrat);
-  font-size: clamp(1.8rem, 7vw, 2.625rem);
+  font-size: clamp(1.8rem, 7vw, 2.25rem);
   color: var(--dark-blue);
   margin-bottom: 1rem;
 }
@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .heading-three-style {
   font-family: var(--Montserrat);
-  font-size: clamp(1.35rem, 3vw, 1.625rem);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
   color: var(--dark-blue);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -365,7 +365,7 @@ header {
 
 .intro-section-txt {
   margin-top: 2rem;
-  max-width: 37%;
+  max-width: 52ch;
 }
 
 .intro-section-txt:nth-child(odd) {
@@ -460,8 +460,7 @@ header {
 
 .portfolio-examples-container {
   background-color: var(--bg-accent);
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  padding-top: 3em;
 }
 
 .section-heading-text-container {

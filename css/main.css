@@ -62,8 +62,8 @@ p {
 }
 
 .container {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
 /* back to top button */
@@ -327,7 +327,6 @@ header {
 }
 
 /************* main **************/
-
 .text {
   font-size: clamp(1rem, 1vw, 1.125rem);
   max-width: 65ch;
@@ -493,19 +492,9 @@ header {
   box-shadow: var(--shadow-hover);
 }
 
-.card-heading {
-  padding: 12px;
-  font-size: clamp(1rem, 5vw, 1.5rem);
-  font-weight: 600;
-  font-family: var(--Montserrat);
-  color: var(--dark-blue);
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
 .card-inner {
   max-width: 100%;
-  height: 440px;
+  height: 33rem;
   border-radius: 1.5rem;
   background-size: cover;
   transition: 0.3s;
@@ -533,6 +522,16 @@ header {
   transition: opacity 0.2s;
 }
 
+.card-heading {
+  padding: 12px;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-weight: 600;
+  font-family: var(--Montserrat);
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
 .txt-open-all {
   font-size: 1rem;
   color: var(--dark-blue);
@@ -550,7 +549,7 @@ header {
 /* FAQ Accordion */
 
 .faq {
-  max-width: 60rem;
+  max-width: 1440px;
   margin-inline: auto;
   margin-bottom: 7.5rem;
 }
@@ -560,22 +559,26 @@ header {
 }
 
 .accordion-item {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--light-blue);
   padding: 1em;
   cursor: pointer;
 }
 
 .accordion-question {
   font-weight: 600;
+  font-size: 1.25rem;
   position: relative;
   color: var(--dark-blue);
+  padding: 1em 0;
 }
 
 .accordion-question::after {
   content: '+';
   position: absolute;
   right: 0;
-  font-weight: bold;
+  transform: rotate(-90deg);
+  transition-duration: 0.3s;
+  font-size: 2rem;
 }
 
 .accordion-answer {
@@ -597,7 +600,9 @@ header {
 }
 
 .accordion-item.active .accordion-question::after {
-  content: '-';
+  content: '+';
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
 }
 
 .accordion-item.active .accordion-answer {
@@ -605,7 +610,6 @@ header {
 }
 
 /************* Get In Touch section **************/
-
 .contact-me-img-container {
   display: flex;
   flex-direction: column;
@@ -621,7 +625,6 @@ header {
 }
 
 /************* Form **************/
-
 form {
   display: flex;
   flex-direction: column;
@@ -679,7 +682,6 @@ button:hover {
 }
 
 /************* footer **************/
-
 .wave-contact-me {
   display: flex;
 }

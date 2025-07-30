@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (backToTopBtn) {
     window.onscroll = function () {
       backToTopBtn.style.display =
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
+        document.body.scrollTop > 1000 ||
+        document.documentElement.scrollTop > 1000
           ? 'block'
           : 'none';
     };

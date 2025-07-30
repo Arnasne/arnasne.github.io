@@ -9,11 +9,6 @@
 }
 
 @media (max-width: 1025px) {
-  .container {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
   nav {
     padding-left: 2em;
     padding-right: 2em;
@@ -25,10 +20,6 @@
 
   .my-tools {
     margin-top: 3rem;
-  }
-
-  .my-tools {
-    padding: inherit;
   }
 
   .status-online {
@@ -70,6 +61,11 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
   header {
     margin-bottom: 5rem;
   }
@@ -96,6 +92,10 @@
 
   .intro-section-txt {
     margin-top: 0;
+  }
+
+  .my-tools {
+    padding: inherit;
   }
 
   .my-tools {

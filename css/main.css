@@ -568,17 +568,22 @@ header {
   padding-top: 0;
 }
 
+.accordion-question,
+.heading-three-style {
+  margin-bottom: 0;
+  padding-right: 2rem;
+}
+
 .accordion-question {
-  font-weight: 600;
-  font-size: 1.25rem;
   position: relative;
-  color: var(--dark-blue);
   padding: 1em 0;
+  color: var(--dark-blue);
 }
 
 .accordion-question::after {
   content: '+';
   position: absolute;
+  top: 0.8rem;
   right: 0;
   transform: rotate(-90deg);
   transition-duration: 0.3s;

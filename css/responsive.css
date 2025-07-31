@@ -144,6 +144,10 @@
   .main-cert-container {
     margin-bottom: 5rem;
   }
+
+  .accordion-question::after {
+    top: 0.6rem;
+  }
 }
 
 @media (max-width: 577px) {

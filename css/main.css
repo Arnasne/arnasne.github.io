@@ -146,7 +146,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /************* navigation **************/
-
 nav {
   max-width: 1440px;
   margin-inline: auto;
@@ -155,6 +154,24 @@ nav {
   margin-bottom: 5rem;
   padding: 1em 3em;
   position: relative;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  font-family: var(--Montserrat);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 .avatar-nav-logo {
@@ -174,28 +191,6 @@ nav {
   background-color: rgb(0 196 0);
   border: 2px solid white;
   border-radius: 50%;
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
-  font-family: var(--Montserrat);
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-nav a {
-  height: 100%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: var(--dark-blue);
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.2s;
 }
 
 nav .mobile-menu {

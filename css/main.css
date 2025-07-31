@@ -211,13 +211,11 @@ nav .mobile-menu {
   background-color: var(--bg-hero);
   border-radius: 2rem;
   align-self: center;
-  padding: 0.5em 0.8em;
+  padding: 0.7em 0.8em;
 }
 
 .nav-active {
   background-color: var(--light-blue);
-  padding: 0.7em;
-  border-radius: 2rem;
 }
 
 .nav-active:hover {
@@ -593,16 +591,6 @@ header {
   transition: max-height 0.3s ease;
   margin-top: 0.5rem;
   color: var(--dark-blue);
-}
-
-.reveal,
-.active {
-  background-color: var(--main-body);
-}
-
-.reveal,
-.active:hover {
-  background-color: var(--main-body);
 }
 
 .accordion-item.active .accordion-question::after {

@@ -486,6 +486,7 @@ header {
   box-shadow: var(--shadow);
   transition: 0.2s;
   position: relative;
+  z-index: 3;
 }
 
 .card:hover {
@@ -505,7 +506,6 @@ header {
 .card:hover .card-inner {
   transform: translateY(-11%);
   height: 111%;
-  z-index: 1;
 }
 
 .card-heading {
@@ -550,7 +550,6 @@ header {
 }
 
 /* FAQ Accordion */
-
 .faq {
   max-width: 1440px;
   margin-inline: auto;
@@ -565,6 +564,10 @@ header {
   border-bottom: 1px solid var(--light-blue);
   padding: 1em;
   cursor: pointer;
+}
+
+.accordion-item:first-child {
+  padding-top: 0;
 }
 
 .accordion-question {

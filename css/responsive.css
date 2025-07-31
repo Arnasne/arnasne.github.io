@@ -144,10 +144,6 @@
   .main-cert-container {
     margin-bottom: 5rem;
   }
-
-  .cert-img:hover {
-    transform: scale(1.1);
-  }
 }
 
 @media (max-width: 577px) {
@@ -292,10 +288,6 @@
 
   .footer-soc-container {
     gap: 1.5rem;
-  }
-
-  .cert-img:hover {
-    transform: scale(1.2);
   }
 
   #backToTop {

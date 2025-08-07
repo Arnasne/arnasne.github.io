@@ -1,7 +1,6 @@
 :root {
   /* colors */
   --text-color: #002f6c;
-  --heading-color: #0047a3;
   --dark-blue: #002f6c;
   --main-body: #f4fcff;
   --bg-accent: #d4f1ff;
@@ -10,8 +9,8 @@
   --blue-hover: #75d3ff;
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
-  --green: #05ac9a;
-  --green-light: #33c9ba;
+  --mint: #00c4b4;
+  --mint-light: hsl(175, 100%, 42%);
   /* fonts */
   --Sacramento: 'Sacramento', cursive;
   --Montserrat: 'Montserrat', verdana, sans-serif;
@@ -197,11 +196,6 @@ nav .mobile-menu {
   display: none;
 }
 
-.main-nav-link:hover,
-.sidebar .nav-link:hover {
-  background-color: var(--light-blue);
-}
-
 .nav-link {
   background-color: var(--bg-hero);
   border-radius: 2rem;
@@ -216,6 +210,11 @@ nav .mobile-menu {
 .nav-active:hover {
   background-color: var(--blue-hover);
   color: var(--active-hover-color);
+}
+
+.main-nav-link:hover,
+.sidebar .nav-link:hover {
+  background-color: var(--light-blue);
 }
 
 /* sidebar menu */
@@ -554,7 +553,7 @@ header {
 }
 
 .accordion-item {
-  border-bottom: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--bg-accent);
   padding: 1em;
   cursor: pointer;
 }
@@ -651,14 +650,13 @@ textarea::placeholder {
   opacity: 1;
 }
 
-button,
 .btn {
   border: none;
   cursor: pointer;
-  background-color: var(--green);
+  background-color: var(--mint);
   padding: 1em 2em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--dark-blue);
   border-radius: 2rem;
   font-family: 'Montserrat', sans-serif;
   box-shadow: var(--shadow);
@@ -670,7 +668,7 @@ button,
 }
 
 button:hover {
-  background-color: var(--green-light);
+  background-color: var(--mint-light);
   box-shadow: var(--shadow-hover);
   transform: scale(1.03);
 }
@@ -742,7 +740,6 @@ footer {
 }
 
 .copyright {
-  font-family: var(--Montserrat);
   color: white;
   font-size: 0.875rem;
 }

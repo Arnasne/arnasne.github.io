@@ -99,11 +99,28 @@
     margin-bottom: 5rem;
   }
 
+  .marquee-inner {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: marquee 50s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   .marquee-row-2 {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: marquee-2 25s linear infinite;
+    animation: marquee-2 50s linear infinite;
   }
 
   @keyframes marquee-2 {
@@ -130,6 +147,10 @@
   .portfolio-container,
   .main-cert-container {
     margin-bottom: 5rem;
+  }
+
+  .accordion-item {
+    padding: 1em 0;
   }
 
   .accordion-question::after {
@@ -267,6 +288,18 @@
     right: 1rem;
   }
 
+  .accordion-item {
+    padding: 0.625em 0;
+  }
+
+  .accordion-question {
+    padding: 0.625em 0;
+  }
+
+  .accordion-question::after {
+    top: 0.2rem;
+  }
+
   .bird-img {
     max-width: 17rem;
     right: 1.5rem;
@@ -275,11 +308,11 @@
   .footer-links-container {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .footer-soc-container {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   #backToTop {
@@ -321,7 +354,6 @@
 }
 
 /* portfolio media queries */
-
 @media (max-width: 1025px) {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);

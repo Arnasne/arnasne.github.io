@@ -66,7 +66,6 @@ p {
 }
 
 /* back to top button */
-
 #backToTop {
   display: none; /* Hidden by default */
   position: fixed;
@@ -92,7 +91,6 @@ p {
 }
 
 /* vertical scrollbar */
-
 body::-webkit-scrollbar {
   width: 1em;
 }
@@ -112,7 +110,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /************* headings **************/
-
 .heading-hero {
   font-family: var(--Sacramento);
   color: var(--dark-blue);
@@ -218,7 +215,6 @@ nav .mobile-menu {
 }
 
 /* sidebar menu */
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -233,6 +229,7 @@ nav .mobile-menu {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 1em;
+  gap: 1.7rem;
 }
 
 .sidebar li {
@@ -268,7 +265,6 @@ nav .mobile-menu {
 }
 
 /* hero section */
-
 header {
   background-color: var(--bg-hero);
   margin-bottom: 7.5rem;
@@ -379,7 +375,6 @@ header {
 }
 
 /************* My tools section **************/
-
 .my-tools {
   margin: 0 auto 7.5rem;
   padding: inherit;
@@ -457,7 +452,6 @@ header {
 }
 
 /************* Portfolio examples section **************/
-
 .portfolio-examples-container {
   background-color: var(--bg-accent);
   padding-top: 3em;
@@ -703,14 +697,14 @@ footer {
 .footer-links-soc {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   flex-direction: column;
   align-items: center;
 }
 
 .footer-links-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
@@ -718,7 +712,7 @@ footer {
 .footer-link {
   font-family: var(--Montserrat);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   color: white;
   display: flex;
   align-items: center;

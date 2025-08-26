@@ -404,7 +404,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.375rem;
+  gap: 1rem;
   width: max-content;
   margin-bottom: 1rem;
 }

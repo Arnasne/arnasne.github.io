@@ -383,27 +383,30 @@ header {
 .my-tools {
   margin: 0 auto 7.5rem;
   padding: inherit;
-  max-width: 1587px;
+  max-width: 1440px;
 }
 
-.tools-row-marquee {
-  width: 100%;
+.marquee-outer {
+  width: 1440px; /* arba 100%, jei reikia responsyviai */
   overflow: hidden;
-  white-space: nowrap;
+  position: relative;
+  margin: 0 auto;
 }
 
-.tools-row {
+.marquee-inner {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.375rem;
   width: max-content;
-  animation: marquee 50s linear infinite;
   margin-bottom: 1rem;
-}
-
-.tools-row-2 {
-  display: none;
 }
 
 @keyframes marquee {
@@ -414,6 +417,10 @@ header {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.marquee-row-2 {
+  display: none;
 }
 
 .img-card {
@@ -655,7 +662,7 @@ textarea::placeholder {
   background-color: var(--mint);
   padding: 1em 2em;
   text-transform: uppercase;
-  color: var(--dark-blue);
+  color: white;
   border-radius: 2rem;
   font-family: 'Montserrat', sans-serif;
   box-shadow: var(--shadow);

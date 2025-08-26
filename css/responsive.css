@@ -96,27 +96,14 @@
 
   .my-tools {
     padding: inherit;
-  }
-
-  .my-tools {
     margin-bottom: 5rem;
   }
 
-  .tools-row-marquee-2 {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .tools-row {
-    animation: marquee 90s linear infinite;
-  }
-
-  .tools-row-2 {
+  .marquee-row-2 {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: marquee-2 90s linear infinite;
+    animation: marquee-2 25s linear infinite;
   }
 
   @keyframes marquee-2 {
@@ -232,12 +219,13 @@
     padding: inherit;
   }
 
-  .tools-row {
-    gap: 1rem;
+  .marquee-content {
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 
   .img-card {
-    padding: 0.5em 1.5em 0.5em 0.5em;
+    padding: 0.625em 1.5em 0.625em 0.625em;
   }
 
   .tools-icon {

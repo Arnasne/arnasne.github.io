@@ -457,10 +457,13 @@ header {
   padding-top: 3em;
 }
 
+.my-tools-paddings {
+  padding: 0 1.5em;
+}
+
 .section-heading-text-container {
   max-width: 65ch;
-  margin: 0 auto 2rem;
-  padding: 0 1.5em;
+  margin: 0 auto 3rem;
 }
 
 .card-row {
@@ -557,6 +560,7 @@ header {
   border-bottom: 1px solid var(--bg-accent);
   padding: 1em;
   cursor: pointer;
+  padding: 1em 0;
 }
 
 .accordion-item:first-child {
@@ -565,7 +569,11 @@ header {
 
 .accordion-question .heading-three-style {
   margin-bottom: 0;
-  padding-right: 2rem;
+  padding-right: 32px;
+}
+
+.accordion-question:first-child {
+  padding-top: 0;
 }
 
 .accordion-question {
@@ -577,8 +585,8 @@ header {
 .accordion-question::after {
   content: '+';
   position: absolute;
-  top: 0.8rem;
-  right: 0;
+  top: 0;
+  right: 6px;
   transform: rotate(-90deg);
   transition-duration: 0.3s;
   font-size: 2rem;

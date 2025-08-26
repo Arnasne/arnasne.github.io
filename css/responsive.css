@@ -149,12 +149,8 @@
     margin-bottom: 5rem;
   }
 
-  .accordion-item {
-    padding: 1em 0;
-  }
-
   .accordion-question::after {
-    top: 0.6rem;
+    top: -0.3rem;
   }
 }
 
@@ -218,7 +214,8 @@
 }
 
 @media (max-width: 426px) {
-  .container {
+  .container,
+  .my-tools-paddings {
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -297,7 +294,7 @@
   }
 
   .accordion-question::after {
-    top: 0.2rem;
+    top: -0.4rem;
   }
 
   .bird-img {

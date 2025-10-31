@@ -141,7 +141,7 @@
   @media (max-width: 768px) {
     .marquee-outer::before,
     .marquee-outer::after {
-      width: 3.5rem;
+      width: 3rem;
     }
   }
 
@@ -157,6 +157,10 @@
   button,
   .portfolio-container,
   .main-cert-container {
+    margin-bottom: 5rem;
+  }
+
+  .faq {
     margin-bottom: 5rem;
   }
 

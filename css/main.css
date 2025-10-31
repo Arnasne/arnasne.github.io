@@ -674,7 +674,6 @@ header {
 /************* Get In Touch section **************/
 .contact-me {
   background: linear-gradient(to top, #bae9ff, var(--main-body));
-  padding-top: 2.5em;
 }
 
 .contact-me-img-container {

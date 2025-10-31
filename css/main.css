@@ -292,6 +292,7 @@ nav .mobile-menu {
   color: var(--dark-blue);
   font-size: 1.4rem;
   display: flex;
+  justify-content: flex-end;
 }
 
 /* hero section */

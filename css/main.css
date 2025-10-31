@@ -669,14 +669,13 @@ form {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  gap: 1rem;
   max-width: 500px;
   text-align: left;
   color: var(--dark-blue);
 }
 
 form label {
-  margin-left: 1rem;
+  margin: 0.5rem 1rem 0.5rem;
 }
 
 input,
@@ -737,7 +736,7 @@ textarea::placeholder {
   box-shadow: var(--shadow);
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 5rem;
+  margin: 1rem 0 5rem;
   transition: 0.2s;
 }
 

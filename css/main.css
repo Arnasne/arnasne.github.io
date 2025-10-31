@@ -244,15 +244,26 @@ nav .mobile-menu {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 1em;
-  gap: 1.7rem;
+  gap: 1rem;
 }
 
 .sidebar li {
   width: 100%;
 }
 
-.sidebar a {
+.sidebar a,
+.sidebar .nav-link {
+  display: block;
   width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--blue-hover);
+  color: var(--active-hover-color);
 }
 
 .sidebar .nav-link {
@@ -268,14 +279,18 @@ nav .mobile-menu {
   color: var(--active-hover-color);
 }
 
+.sidebar .fa-xmark {
+  font-size: 1.5rem;
+}
+
 .fa-house {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .fa-xmark,
 .fa-bars {
   color: var(--dark-blue);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
 }
 

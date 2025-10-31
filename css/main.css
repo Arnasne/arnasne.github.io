@@ -639,7 +639,6 @@ header {
 
 .accordion-question {
   position: relative;
-  padding: 1em 0;
   color: var(--dark-blue);
 }
 

@@ -134,7 +134,6 @@
   }
 
   .bird-img {
-    max-width: 25rem;
     right: 4rem;
   }
 
@@ -298,8 +297,7 @@
   }
 
   .bird-img {
-    max-width: 17rem;
-    right: 1.5rem;
+    right: 1rem;
   }
 
   .footer-links-container {

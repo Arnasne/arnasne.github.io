@@ -640,7 +640,7 @@ header {
 .bird-img {
   max-width: 30rem;
   position: relative;
-  top: 1px;
+  top: 36px;
   right: 7rem;
   padding: 0 1em;
 }
@@ -656,6 +656,12 @@ form {
   margin-inline: auto;
   gap: 1rem;
   max-width: 500px;
+  text-align: left;
+  color: var(--dark-blue);
+}
+
+form label {
+  margin-left: 1rem;
 }
 
 input,

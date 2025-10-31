@@ -99,6 +99,10 @@
     margin-bottom: 5rem;
   }
 
+  .accordion-question::after {
+    font-size: 2rem;
+  }
+
   .marquee-inner {
     display: flex;
     gap: 1rem;

@@ -650,7 +650,7 @@ header {
   right: 6px;
   transform: rotate(-90deg);
   transition-duration: 0.3s;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .accordion-answer {

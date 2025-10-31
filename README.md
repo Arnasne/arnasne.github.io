@@ -1,1 +1,1 @@
-You can visit my personal website at: https://arnasne.github.io
+You can visit my portfolio website at: https://arnasne.github.io

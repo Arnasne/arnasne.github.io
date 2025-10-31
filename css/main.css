@@ -778,7 +778,7 @@ button:hover {
 
 /************* footer **************/
 footer {
-  padding-top: 4em;
+  padding-top: 3em;
   padding-bottom: 0.7em;
   background-color: var(--active-hover-color);
 }

@@ -133,6 +133,14 @@
     }
   }
 
+  /* smaller screens — less fade width */
+  @media (max-width: 768px) {
+    .marquee-outer::before,
+    .marquee-outer::after {
+      width: 3.5rem;
+    }
+  }
+
   .bird-img {
     right: 4rem;
   }
@@ -150,6 +158,19 @@
 
   .accordion-question::after {
     top: -0.3rem;
+  }
+
+  .footer-links-soc {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-link {
+    font-size: 1.5rem;
+  }
+
+  .fa-brands {
+    font-size: 2.5rem;
   }
 }
 

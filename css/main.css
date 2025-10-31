@@ -11,6 +11,12 @@
   --red: #ff6b7b;
   --mint: #00c4b4;
   --mint-light: hsl(175, 100%, 42%);
+  /* headings */
+  --h1-hero: clamp(3rem, 18vw, 6.5rem);
+  --h1: clamp(2.4rem, 7vw, 5rem);
+  --h2-hero: clamp(1rem, 5.7vw, 2rem);
+  --h2: clamp(2rem, 7vw, 4rem);
+  --h3: clamp(1.3rem, 3vw, 2rem);
   /* fonts */
   --Sacramento: 'Sacramento', cursive;
   --Montserrat: 'Montserrat', verdana, sans-serif;
@@ -23,7 +29,7 @@
 
 *,
 *::after,
-f *::before {
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -113,29 +119,38 @@ body::-webkit-scrollbar-thumb:hover {
 .heading-hero {
   font-family: var(--Sacramento);
   color: var(--dark-blue);
-  font-size: clamp(3rem, 18vw, 6.5rem);
+  font-size: var(--h1-hero);
   margin-top: 8rem;
   line-height: 1;
 }
 
-.page-heading {
+.h1 {
   font-family: var(--Montserrat);
-  font-size: clamp(1.8rem, 7vw, 2.25rem);
+  font-size: var(--h1);
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+}
+
+.h2 {
+  font-family: var(--Montserrat);
+  font-size: var(--h2);
   color: var(--dark-blue);
   margin-bottom: 1rem;
+  letter-spacing: -2px;
 }
 
 .heading-two-style {
   font-family: var(--Montserrat);
-  font-size: clamp(1rem, 5.7vw, 2rem);
+  font-size: var(--h2-hero);
   color: var(--dark-blue);
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
-.heading-three-style {
+.h3 {
   font-family: var(--Montserrat);
-  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-size: var(--h3);
   color: var(--dark-blue);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -567,7 +582,7 @@ header {
   padding-top: 0;
 }
 
-.accordion-question .heading-three-style {
+.accordion-question .h3 {
   margin-bottom: 0;
   padding-right: 32px;
 }
@@ -611,6 +626,11 @@ header {
 }
 
 /************* Get In Touch section **************/
+.contact-me {
+  background: linear-gradient(to top, #bae9ff, var(--main-body));
+  padding-top: 2.5em;
+}
+
 .contact-me-img-container {
   display: flex;
   flex-direction: column;
@@ -623,6 +643,10 @@ header {
   top: 1px;
   right: 7rem;
   padding: 0 1em;
+}
+
+.wave {
+  display: flex;
 }
 
 /************* Form **************/
@@ -640,7 +664,7 @@ textarea {
   padding: 1em 1.5em;
   border-radius: 2rem;
   border: none;
-  background-color: var(--bg-accent);
+  background-color: white;
   font-size: 1rem;
   font-family: var(--Montserrat);
   outline-color: var(--bg-hero);
@@ -649,20 +673,42 @@ textarea {
 }
 
 input::placeholder {
-  color: var(--bg-hero);
+  color: #8e8e8e;
   opacity: 1;
 }
 
 textarea::placeholder {
-  color: var(--bg-hero);
+  color: #8e8e8e;
   opacity: 1;
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn .fa-envelope {
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 260ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  will-change: transform;
+}
+
+.btn:hover .fa-envelope,
+.btn:focus .fa-envelope,
+.btn:active .fa-envelope {
+  transform: translateX(8px);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: none;
   cursor: pointer;
   background-color: var(--mint);
-  padding: 1em 2em;
+  padding: 1.3em 2em;
   text-transform: uppercase;
   color: white;
   border-radius: 2rem;
@@ -670,9 +716,8 @@ textarea::placeholder {
   box-shadow: var(--shadow);
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 7.5rem;
+  margin-bottom: 5rem;
   transition: 0.2s;
-  letter-spacing: 1px;
 }
 
 button:hover {
@@ -682,20 +727,6 @@ button:hover {
 }
 
 /************* footer **************/
-.wave-contact-me {
-  display: flex;
-}
-
-.footer-mountains {
-  display: flex;
-}
-
-.footer-mountains,
-footer {
-  position: relative;
-  overflow: hidden;
-}
-
 footer {
   padding-top: 3em;
   padding-bottom: 1.5em;

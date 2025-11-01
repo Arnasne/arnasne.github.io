@@ -353,6 +353,10 @@ header {
   color: var(--text-color);
 }
 
+.thanks-p {
+  margin-bottom: 2rem;
+}
+
 .page-greetings {
   display: flex;
   flex-direction: column;
@@ -769,7 +773,7 @@ textarea::placeholder {
   transition: 0.2s;
 }
 
-button:hover {
+.btn:hover {
   background-color: var(--mint-light);
   box-shadow: var(--shadow-hover);
   transform: scale(1.03);

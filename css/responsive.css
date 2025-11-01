@@ -321,10 +321,6 @@
     padding: 0.625em 0;
   }
 
-  .accordion-question {
-    padding: 0.625em 0;
-  }
-
   .accordion-question::after {
     top: -0.4rem;
   }

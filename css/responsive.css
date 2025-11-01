@@ -344,17 +344,7 @@
   }
 
   .footer-link {
-    font-size: 2rem;
-  }
-
-  .footer-links-container {
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-  }
-
-  .footer-soc-container {
-    flex-direction: column;
-    align-items: center;
+    font-size: 1.5rem;
   }
 }
 
@@ -373,6 +363,15 @@
 
   .fa-bars {
     font-size: 1rem;
+  }
+
+  .footer-links-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-soc-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* Image modal content */

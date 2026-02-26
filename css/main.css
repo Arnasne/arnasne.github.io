@@ -341,8 +341,9 @@ header {
 
 /************* main **************/
 .text {
+  margin: 0 auto;
   font-size: clamp(1rem, 1vw, 1.125rem);
-  max-width: 65ch;
+  max-width: 42ch;
   color: var(--text-color);
 }
 

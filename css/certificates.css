@@ -2,10 +2,6 @@ body {
   background-color: var(--main-body);
 }
 
-.header-cert {
-  margin-bottom: 4rem;
-}
-
 .main-cert-container {
   margin-bottom: 7.5rem;
 }
@@ -14,12 +10,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .cert-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  /* gap: 3rem; */
   margin-top: 2rem;
 }
 

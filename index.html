@@ -8,7 +8,7 @@
   <title>Landing Page & E-Commerce Website Developer – Modern Web Design</title>
   <meta name="description"
     content="Modern, responsive websites — from sleek landing pages to fully functional e-commerce stores. I deliver reliable solutions tailored to your business goals.">
-  <link rel="preload" as="image" href="mountain.webp">
+  <link rel="preload" as="image" href="images/mountain.webp">
   <!-- Icon -->
   <link rel="icon" href="tabicon.ico">
   <!-- Fontawsome Icons -->
@@ -30,7 +30,7 @@
     <!-- navigation -->
     <nav>
       <a href="#contact-me">
-        <img loading="lazy" class="avatar-nav-logo" src="/images/avatar-v.webp" alt="avatar image" title="Contact me">
+        <img loading="lazy" class="avatar-nav-logo" src="images/avatar-v.webp" alt="avatar image" title="Contact me">
       </a>
 
       <span class="status-online"></span>
@@ -151,7 +151,7 @@
     </div>
 
     <!-- Portfolio examples section -->
-    <img class="wave" src="/images/wave-top.svg" alt="decoration image">
+    <img class="wave" src="images/wave-top.svg" alt="decoration image">
     <section class="portfolio-examples-container tac container" aria-labelledby="page-title">
       <div class="section-heading-text-container">
         <h2 class="h2" id="page-title">Portfolio</h2>
@@ -184,12 +184,15 @@
       </div>
       <a class="txt-open-all" href="portfolio.html">View more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </section>
-    <img src="/images/wave-bottom.svg" alt="decoration image">
+    <img src="images/wave-bottom.svg" alt="decoration image">
 
     <!-- My tools section -->
     <section class="my-tools tac container" aria-labelledby="page-title">
       <div class="section-heading-text-container my-tools-paddings">
-        <img class="tools-icon-comb" src="images/Icons combination.svg" alt="tools icon">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/Mobile-tool-icons.svg">
+          <img class="tools-icon-comb" src="images/Desktop-tool-icons.svg" alt="tool icons">
+        </picture>
         <h2 class="h2" id="page-title">My tools</h2>
         <p class="text">From design to development, these tools help me create modern and responsive websites for
           different needs.

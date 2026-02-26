@@ -137,7 +137,6 @@
     }
   }
 
-  /* smaller screens — less fade width */
   @media (max-width: 768px) {
     .marquee-outer::before,
     .marquee-outer::after {
@@ -175,10 +174,6 @@
 
   .footer-link {
     font-size: 1.5rem;
-  }
-
-  .fa-brands {
-    font-size: 4.5rem;
   }
 
   #backToTop {

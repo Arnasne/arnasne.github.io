@@ -325,6 +325,14 @@
     top: 16rem;
   }
 
+  .card-inner {
+    height: 22rem;
+  }
+
+  .card-heading {
+    top: 22.3rem;
+  }
+
   .footer-link {
     font-size: 1.5rem;
   }

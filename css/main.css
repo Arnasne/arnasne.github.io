@@ -13,7 +13,6 @@
   --mint-light: hsl(175, 100%, 42%);
   /* headings */
   --h1-hero: clamp(3rem, 18vw, 6.5rem);
-  --h1: clamp(2.4rem, 7vw, 5rem);
   --h2-hero: clamp(1rem, 5.7vw, 2rem);
   --h2: clamp(2rem, 7vw, 4rem);
   --h3: clamp(1.3rem, 3vw, 2rem);
@@ -21,10 +20,11 @@
   --Sacramento: 'Sacramento', cursive;
   --Montserrat: 'Montserrat', verdana, sans-serif;
   /* shadows */
-  --shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06),
+  --shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06),
     0px 8px 16px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0px 4px 20px rgba(0, 0, 0, 0.16),
-    0px 8px 20px rgba(0, 0, 0, 0.1);
+  --shadow-hover:
+    0px 4px 20px rgba(0, 0, 0, 0.16), 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 *,
@@ -212,7 +212,7 @@ nav .mobile-menu {
   background-color: var(--bg-hero);
   border-radius: 2rem;
   align-self: center;
-  padding: 0.7em 0.8em;
+  padding: 0.8em;
 }
 
 .nav-active {
@@ -315,13 +315,6 @@ header {
   z-index: 2;
 }
 
-.cloud1 {
-  animation-duration: 100s;
-  animation-delay: 50s;
-  transform: scale(0.6);
-  top: 23rem;
-  opacity: 0.7;
-}
 .cloud2 {
   animation-duration: 80s;
   top: 23rem;
@@ -414,6 +407,10 @@ header {
   margin: 0 auto 7.5rem;
   padding: inherit;
   max-width: 1440px;
+}
+
+.tools-icon-comb {
+  margin-bottom: 10px;
 }
 
 .marquee-outer {

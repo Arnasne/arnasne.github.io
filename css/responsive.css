@@ -191,10 +191,6 @@
     transform: scale(0.7);
   }
 
-  .cloud1 {
-    top: 18rem;
-  }
-
   .cloud2 {
     top: 20rem;
   }
@@ -236,10 +232,6 @@
 }
 
 @media (max-width: 520px) {
-  .cloud1 {
-    top: 17rem;
-  }
-
   .cloud2 {
     top: 19rem;
   }
@@ -254,11 +246,6 @@
 
   .cloud {
     transform: scale(0.6);
-  }
-
-  .cloud1 {
-    top: 16rem;
-    transform: scale(0.5);
   }
 
   .cloud2 {
@@ -331,10 +318,6 @@
 }
 
 @media (max-width: 376px) {
-  .cloud1 {
-    top: 15rem;
-  }
-
   .cloud2 {
     top: 16rem;
   }
@@ -345,10 +328,6 @@
 }
 
 @media (max-width: 321px) {
-  .cloud1 {
-    top: 14rem;
-  }
-
   .cloud2 {
     top: 15rem;
   }

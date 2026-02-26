@@ -94,6 +94,18 @@
     margin-top: 0;
   }
 
+  .card {
+    width: 18rem;
+  }
+
+  .card-inner {
+    height: 22rem;
+  }
+
+  .card-heading {
+    top: 22.3rem;
+  }
+
   .my-tools {
     padding: inherit;
     margin-bottom: 5rem;
@@ -283,10 +295,6 @@
 
   .hamburger {
     right: 1.5rem;
-  }
-
-  .card {
-    height: min(32rem, 33.75rem);
   }
 
   .card-inner {

@@ -9,8 +9,8 @@
   --blue-hover: #75d3ff;
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
-  --mint: #00c4b4;
-  --mint-light: hsl(175, 100%, 42%);
+  --yellow: #f1bc1e;
+  --mint-light: #f4cb4e;
   /* headings */
   --h1-hero: clamp(3rem, 18vw, 6.5rem);
   --h2-hero: clamp(1rem, 5.7vw, 2rem);
@@ -453,7 +453,7 @@ header {
 
 .marquee-inner {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   width: max-content;
   animation: marquee 25s linear infinite;
 }
@@ -745,10 +745,10 @@ textarea::placeholder {
   gap: 10px;
   border: none;
   cursor: pointer;
-  background-color: var(--mint);
+  background-color: var(--yellow);
   padding: 1.3em 2em;
   text-transform: uppercase;
-  color: white;
+  color: var(--text-color);
   border-radius: 2rem;
   font-family: 'Montserrat', sans-serif;
   box-shadow: var(--shadow);

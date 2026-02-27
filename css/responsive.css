@@ -199,11 +199,7 @@
   }
 
   .cloud2 {
-    top: 20rem;
-  }
-
-  .heading-hero {
-    margin-top: 4rem;
+    top: 19rem;
   }
 
   .introduction-text-top,
@@ -240,7 +236,7 @@
 
 @media (max-width: 520px) {
   .cloud2 {
-    top: 19rem;
+    top: 18rem;
   }
 }
 
@@ -252,11 +248,16 @@
   }
 
   .cloud {
-    transform: scale(0.6);
+    top: 5rem;
+    width: 120px;
   }
 
   .cloud2 {
-    top: 17rem;
+    top: 14rem;
+  }
+
+  .heading-hero {
+    margin-top: 4rem;
   }
 
   .my-tools {
@@ -321,10 +322,6 @@
 }
 
 @media (max-width: 376px) {
-  .cloud2 {
-    top: 16rem;
-  }
-
   .card-inner {
     height: 22rem;
   }
@@ -339,10 +336,6 @@
 }
 
 @media (max-width: 321px) {
-  .cloud2 {
-    top: 15rem;
-  }
-
   .btn {
     width: 100%;
   }

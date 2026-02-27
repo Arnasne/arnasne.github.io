@@ -10,10 +10,10 @@
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
   --yellow: #f1bc1e;
-  --mint-light: #f4cb4e;
+  --yellow-hover: #f4cb4e;
   /* headings */
-  --h1-hero: clamp(3rem, 18vw, 6.5rem);
-  --h2-hero: clamp(1rem, 5.7vw, 2rem);
+  --h1-hero: clamp(3rem, 12vw, 5rem);
+  --h2-hero: clamp(1rem, 3.8vw, 1.6rem);
   --h2: clamp(2rem, 7vw, 4rem);
   --h3: clamp(1.3rem, 3vw, 2rem);
   /* fonts */
@@ -120,7 +120,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: var(--Sacramento);
   color: var(--dark-blue);
   font-size: var(--h1-hero);
-  margin-top: 8rem;
+  margin-top: 7rem;
   line-height: 1;
 }
 
@@ -162,7 +162,7 @@ nav {
   margin-inline: auto;
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   padding: 1em 3em;
   position: relative;
 }
@@ -303,7 +303,7 @@ header {
 
 .cloud {
   position: absolute;
-  top: 5rem;
+  top: 7rem;
   left: 100vw;
   width: 150px;
   height: 50px;
@@ -316,13 +316,13 @@ header {
 }
 
 .cloud2 {
-  animation-duration: 80s;
-  top: 23rem;
+  animation-duration: 40s;
+  top: 20rem;
 }
 
 .cloud3 {
-  animation-duration: 90s;
-  animation-delay: 30s;
+  animation-duration: 50s;
+  animation-delay: 10s;
 }
 
 @keyframes cloud-move {
@@ -753,13 +753,13 @@ textarea::placeholder {
   font-family: 'Montserrat', sans-serif;
   box-shadow: var(--shadow);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 1rem 0 5rem;
   transition: 0.2s;
 }
 
 .btn:hover {
-  background-color: var(--mint-light);
+  background-color: var(--yellow-hover);
   box-shadow: var(--shadow-hover);
   transform: scale(1.03);
 }

@@ -238,6 +238,11 @@
   .cloud2 {
     top: 18rem;
   }
+
+  .marquee-content {
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
 }
 
 @media (max-width: 426px) {
@@ -262,11 +267,6 @@
 
   .my-tools {
     padding: inherit;
-  }
-
-  .marquee-content {
-    gap: 0.625rem;
-    margin-bottom: 0.625rem;
   }
 
   .img-card {

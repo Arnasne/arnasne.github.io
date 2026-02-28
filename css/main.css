@@ -9,8 +9,8 @@
   --blue-hover: #75d3ff;
   --active-hover-color: #0047a3;
   --red: #ff6b7b;
-  --yellow: #f1bc1e;
-  --yellow-hover: #f4cb4e;
+  --yellow: hsl(45, 88%, 55%);
+  --yellow-hover: hsl(45, 88%, 65%);
   /* headings */
   --h1-hero: clamp(3rem, 12vw, 5rem);
   --h2-hero: clamp(1rem, 3.8vw, 1.6rem);
@@ -456,6 +456,10 @@ header {
   gap: 1.5rem;
   width: max-content;
   animation: marquee 25s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .marquee-content {
@@ -474,6 +478,16 @@ header {
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
   }
 }
 

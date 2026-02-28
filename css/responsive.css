@@ -115,9 +115,12 @@
     font-size: 2rem;
   }
 
+  .footer-links-container {
+    flex-direction: column;
+  }
+
   .marquee-inner {
     display: flex;
-    gap: 1rem;
     width: max-content;
     animation: marquee 50s linear infinite;
   }
@@ -134,7 +137,6 @@
 
   .marquee-row-2 {
     display: flex;
-    gap: 1rem;
     width: max-content;
     animation: marquee-2 50s linear infinite;
   }
@@ -182,10 +184,6 @@
   .footer-links-soc {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .footer-link {
-    font-size: 1.5rem;
   }
 
   #backToTop {
@@ -242,6 +240,10 @@
   .marquee-content {
     gap: 0.625rem;
     margin-bottom: 0.625rem;
+  }
+
+  .marquee-inner {
+    gap: 0.625rem;
   }
 }
 
@@ -328,10 +330,6 @@
 
   .card-heading {
     top: 22.3rem;
-  }
-
-  .footer-link {
-    font-size: 1.5rem;
   }
 }
 

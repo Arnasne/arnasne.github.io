@@ -66,8 +66,22 @@ body {
   border-bottom-right-radius: 2rem;
   padding: 0.4em 1em;
   font-family: var(--Montserrat);
-  font-weight: 600;
   color: var(--dark-blue);
+}
+
+.portfolio-card-heading {
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.portfolio-card-password {
+  opacity: 0.7;
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  letter-spacing: -1px;
+  font-weight: 600;
+  line-height: inherit;
+  margin-left: 4px;
 }
 
 .position-mid {

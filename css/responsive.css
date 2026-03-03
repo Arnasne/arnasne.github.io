@@ -358,13 +358,13 @@
 }
 
 /* portfolio media queries */
-@media (max-width: 1025px) {
+@media (max-width: 1111px) {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 635px) {
+@media (max-width: 700px) {
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
   }

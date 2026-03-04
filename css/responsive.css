@@ -115,8 +115,18 @@
     font-size: 2rem;
   }
 
+  .footer-soc-container {
+    align-items: center;
+  }
+
   .footer-links-container {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-inner-soc-container {
+    gap: 1.5rem;
   }
 
   .marquee-inner {
@@ -183,7 +193,7 @@
 
   .footer-links-soc {
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   #backToTop {

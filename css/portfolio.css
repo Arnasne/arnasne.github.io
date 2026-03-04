@@ -66,7 +66,7 @@ body {
   border-bottom-right-radius: 2rem;
   padding: 0.4em 1em;
   font-family: var(--Montserrat);
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 .portfolio-card-heading {

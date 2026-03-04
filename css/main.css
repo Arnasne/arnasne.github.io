@@ -1,7 +1,6 @@
 :root {
   /* colors */
   --text-color: #002f6c;
-  --dark-blue: #002f6c;
   --main-body: #f4fcff;
   --bg-accent: #d4f1ff;
   --bg-hero: #00aaf9;
@@ -15,7 +14,7 @@
   --h1-hero: clamp(3rem, 12vw, 5rem);
   --h2-hero: clamp(1rem, 3.8vw, 1.6rem);
   --h2: clamp(2rem, 7vw, 4rem);
-  --h3: clamp(1.3rem, 3vw, 2rem);
+  --h3: clamp(1.25rem, 3vw, 1.75rem);
   /* fonts */
   --Sacramento: 'Sacramento', cursive;
   --Montserrat: 'Montserrat', verdana, sans-serif;
@@ -99,7 +98,7 @@ p {
 
 #backToTop:hover {
   background: var(--blue-hover);
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 /* vertical scrollbar */
@@ -112,7 +111,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--dark-blue);
+  background-color: var(--text-color);
   border-radius: 5rem;
   border: 4px solid var(--blue-hover);
 }
@@ -124,7 +123,7 @@ body::-webkit-scrollbar-thumb:hover {
 /************* headings **************/
 .heading-hero {
   font-family: var(--Sacramento);
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-size: var(--h1-hero);
   margin-top: 7rem;
   line-height: 1;
@@ -133,7 +132,7 @@ body::-webkit-scrollbar-thumb:hover {
 .h1 {
   font-family: var(--Montserrat);
   font-size: var(--h1);
-  color: var(--dark-blue);
+  color: var(--text-color);
   margin-bottom: 1.5rem;
   letter-spacing: -2px;
 }
@@ -141,7 +140,7 @@ body::-webkit-scrollbar-thumb:hover {
 .h2 {
   font-family: var(--Montserrat);
   font-size: var(--h2);
-  color: var(--dark-blue);
+  color: var(--text-color);
   margin-bottom: 1rem;
   letter-spacing: -2px;
 }
@@ -149,7 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
 .heading-two-style {
   font-family: var(--Montserrat);
   font-size: var(--h2-hero);
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -157,7 +156,7 @@ body::-webkit-scrollbar-thumb:hover {
 .h3 {
   font-family: var(--Montserrat);
   font-size: var(--h3);
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -184,7 +183,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--dark-blue);
+  color: var(--text-color);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
@@ -295,7 +294,7 @@ nav .mobile-menu {
 
 .fa-xmark,
 .fa-bars {
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-size: 1.4rem;
   display: flex;
   justify-content: flex-end;
@@ -516,7 +515,7 @@ header {
 }
 
 .tools-card-txt {
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-weight: 600;
   font-size: 1.125rem;
 }
@@ -597,7 +596,7 @@ header {
   font-size: clamp(1rem, 6vw, 1.3rem);
   font-weight: 600;
   font-family: var(--Montserrat);
-  color: var(--dark-blue);
+  color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: -1px;
 }
@@ -616,7 +615,7 @@ header {
 
 .txt-open-all {
   font-size: 1rem;
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 .txt-open-all:hover {
@@ -624,7 +623,7 @@ header {
 }
 
 .fa-angle-right {
-  color: var(--dark-blue);
+  color: var(--text-color);
   font-size: 0.8rem;
 }
 
@@ -661,7 +660,7 @@ header {
 
 .accordion-question {
   position: relative;
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 .accordion-question::after {
@@ -679,7 +678,7 @@ header {
   overflow: hidden;
   transition: max-height 0.3s ease;
   margin-top: 0.5rem;
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 .accordion-item.active .accordion-question::after {
@@ -722,7 +721,7 @@ form {
   margin-inline: auto;
   max-width: 500px;
   text-align: left;
-  color: var(--dark-blue);
+  color: var(--text-color);
 }
 
 form label {
@@ -739,7 +738,7 @@ textarea {
   font-size: 1rem;
   font-family: var(--Montserrat);
   outline-color: var(--bg-hero);
-  color: var(--dark-blue);
+  color: var(--text-color);
   box-shadow: var(--shadow);
 }
 
@@ -766,7 +765,7 @@ textarea::placeholder {
   border: none;
   cursor: pointer;
   background-color: var(--yellow);
-  padding: 1.3em 2em;
+  padding: 1.25em 2em;
   text-transform: uppercase;
   color: var(--text-color);
   border-radius: 2rem;
@@ -784,30 +783,39 @@ textarea::placeholder {
   transform: scale(1.03);
 }
 
+.envelope {
+  max-width: 1.25rem;
+}
+
 /************* footer **************/
 footer {
-  padding-top: 3em;
+  padding-top: 2.5em;
   padding-bottom: 0.7em;
   background-color: var(--active-hover-color);
+}
+
+.footer-h3 {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .footer-links-soc {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
-  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 .footer-links-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer-link {
   font-family: var(--Montserrat);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.25rem;
   color: white;
   display: flex;
@@ -822,18 +830,24 @@ footer {
 
 .footer-soc-container {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
 }
 
-.fa-brands {
-  font-size: 2rem;
-  color: white;
+.footer-inner-soc-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-soc-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.fa-brands:hover {
-  color: var(--blue-hover);
+.footer-soc-icon:hover {
+  fill: var(--blue-hover);
 }
 
 .copyright {

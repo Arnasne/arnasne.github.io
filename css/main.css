@@ -806,7 +806,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   justify-self: center;
   margin-bottom: 2.5rem;
-  gap: 11rem;
+  gap: 7.5rem;
 }
 
 .footer-heading-links-container {

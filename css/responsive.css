@@ -115,18 +115,27 @@
     font-size: 2rem;
   }
 
+  .footer-links-soc {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+
   .footer-soc-container {
     align-items: center;
   }
 
-  .footer-links-container {
+  .footer-heading-links-container {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 
   .footer-inner-soc-container {
     gap: 1.5rem;
+  }
+
+  .footer-links-div {
+    align-items: center;
+    gap: 1rem;
   }
 
   .marquee-inner {
@@ -189,11 +198,6 @@
 
   .accordion-question::after {
     top: -0.3rem;
-  }
-
-  .footer-links-soc {
-    flex-direction: column;
-    gap: 2.5rem;
   }
 
   #backToTop {
@@ -352,7 +356,7 @@
     font-size: 1rem;
   }
 
-  .footer-links-container {
+  .footer-heading-links-container {
     flex-wrap: wrap;
   }
 

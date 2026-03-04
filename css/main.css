@@ -797,17 +797,24 @@ footer {
 .footer-h3 {
   font-size: 1.25rem;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   font-weight: 600;
 }
 
 .footer-links-soc {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
   margin-bottom: 2.5rem;
+  gap: 11rem;
 }
 
-.footer-links-container {
+.footer-heading-links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -817,11 +824,8 @@ footer {
   font-family: var(--Montserrat);
   font-weight: 400;
   font-size: 1.25rem;
-  color: white;
-  display: flex;
-  align-items: center;
+  color: #fff;
   transition: 0.2s;
-  align-items: center;
 }
 
 .footer-link:hover {

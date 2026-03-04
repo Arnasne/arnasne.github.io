@@ -348,7 +348,7 @@ header {
 .text {
   margin: 0 auto;
   font-size: clamp(1rem, 1vw, 1.125rem);
-  max-width: 42ch;
+  max-width: 50ch;
   color: var(--text-color);
 }
 
@@ -388,7 +388,8 @@ header {
 
 .intro-section-txt {
   margin-top: 2rem;
-  max-width: 52ch;
+  max-width: 50ch;
+  text-align: left;
 }
 
 .intro-section-txt:nth-child(odd) {

@@ -1,10 +1,6 @@
 @media (max-width: 1440px) {
-  .container {
-    max-width: 100%;
-  }
-
   .intro-section-container {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -65,7 +61,12 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .body-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .hero-container {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
@@ -244,8 +245,13 @@
 }
 
 @media (max-width: 426px) {
-  .container,
+  .body-container,
   .my-tools-paddings {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .hero-container {
     padding-left: 1em;
     padding-right: 1em;
   }

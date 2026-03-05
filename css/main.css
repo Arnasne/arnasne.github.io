@@ -550,15 +550,14 @@ header {
 }
 
 .card-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(18rem, 1fr));
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  max-width: 1440px;
+  margin: 0 auto 2.5rem;
 }
 
 .card {
-  width: 23rem;
   background-color: var(--bg-hero);
   border-radius: 2rem;
   padding: 0.5em 0.5em 3rem;
@@ -575,11 +574,10 @@ header {
 
 .card-inner {
   max-width: 100%;
-  height: 28rem;
+  height: 31rem;
   border-radius: 1.5rem;
   background-size: cover;
   transition: 0.3s;
-  transform: translateY(0);
 }
 
 .card:hover .card-inner {
@@ -589,7 +587,7 @@ header {
 
 .card-heading {
   position: absolute;
-  top: 28.4rem;
+  top: 503px;
   left: 1rem;
   right: 1rem;
   z-index: 2;
@@ -614,18 +612,21 @@ header {
   background-image: url(/images/card-img/eshop-desktop-handmade.webp);
 }
 
-.txt-open-all {
+.view-more-chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   color: var(--text-color);
 }
 
-.txt-open-all:hover {
+.view-more-chevron:hover {
   text-decoration: underline;
 }
 
-.fa-angle-right {
-  color: var(--text-color);
-  font-size: 0.8rem;
+.chevron-right {
+  width: 24px;
+  height: 24px;
 }
 
 /* FAQ Accordion */
@@ -713,6 +714,10 @@ header {
 
 .wave {
   display: flex;
+}
+
+.top-wave-down {
+  margin-bottom: -1px;
 }
 
 /************* Form **************/
@@ -804,10 +809,11 @@ footer {
 
 .footer-links-soc {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-self: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
   margin-bottom: 2.5rem;
-  gap: 7.5rem;
 }
 
 .footer-heading-links-container {

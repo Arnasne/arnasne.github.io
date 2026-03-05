@@ -8,7 +8,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   nav {
     padding-left: 2em;
     padding-right: 2em;
@@ -24,6 +24,10 @@
 
   .status-online {
     left: 61px;
+  }
+
+  .card-row {
+    grid-template-columns: repeat(1, minmax(16rem, 1fr));
   }
 }
 
@@ -92,18 +96,6 @@
 
   .intro-section-txt {
     margin-top: 0;
-  }
-
-  .card {
-    width: 18rem;
-  }
-
-  .card-inner {
-    height: 22rem;
-  }
-
-  .card-heading {
-    top: 22.3rem;
   }
 
   .my-tools {
@@ -235,18 +227,6 @@
     max-width: 20rem;
   }
 
-  /* Image modal close button */
-  .img-modal-close {
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
-@media (max-width: 520px) {
-  .cloud2 {
-    top: 18rem;
-  }
-
   .marquee-content {
     gap: 0.625rem;
     margin-bottom: 0.625rem;
@@ -254,6 +234,12 @@
 
   .marquee-inner {
     gap: 0.625rem;
+  }
+
+  /* Image modal close button */
+  .img-modal-close {
+    top: 1rem;
+    right: 1rem;
   }
 }
 
@@ -310,12 +296,7 @@
     right: 1.5rem;
   }
 
-  .card-inner {
-    height: 28.8rem;
-  }
-
   .card-heading {
-    top: 29rem;
     left: 1rem;
     right: 1rem;
   }
@@ -330,16 +311,6 @@
 
   .bird-img {
     right: 1rem;
-  }
-}
-
-@media (max-width: 376px) {
-  .card-inner {
-    height: 22rem;
-  }
-
-  .card-heading {
-    top: 22.3rem;
   }
 }
 

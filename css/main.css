@@ -562,13 +562,10 @@ header {
   border-radius: 2rem;
   padding: 0.5em 0.5em 3rem;
   box-shadow: var(--shadow);
-  transition: 0.2s;
   position: relative;
-  z-index: 3;
 }
 
 .card:hover {
-  transform: scale(1.03);
   box-shadow: var(--shadow-hover);
 }
 
@@ -759,11 +756,6 @@ textarea::placeholder {
 }
 
 .btn {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -786,11 +778,11 @@ textarea::placeholder {
 .btn:hover {
   background-color: var(--yellow-hover);
   box-shadow: var(--shadow-hover);
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .envelope {
-  max-width: 1.25rem;
+  max-width: 1.2rem;
 }
 
 /************* footer **************/

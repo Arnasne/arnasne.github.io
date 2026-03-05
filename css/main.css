@@ -562,7 +562,7 @@ header {
   border-radius: 2rem;
   padding: 0.5em 0.5em 3rem;
   box-shadow: var(--shadow);
-  position: relative;
+  max-height: 34.6rem;
 }
 
 .card:hover {
@@ -574,21 +574,10 @@ header {
   height: 31rem;
   border-radius: 1.5rem;
   background-size: cover;
-  transition: 0.3s;
-}
-
-.card:hover .card-inner {
-  transform: translateY(-11%);
-  height: 111%;
 }
 
 .card-heading {
-  position: absolute;
-  top: 503px;
-  left: 1rem;
-  right: 1rem;
-  z-index: 2;
-  padding: 12px;
+  padding-top: 12px;
   font-size: clamp(1rem, 6vw, 1.3rem);
   font-weight: 600;
   font-family: var(--Montserrat);

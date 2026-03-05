@@ -563,9 +563,11 @@ header {
   padding: 0.5em 0.5em 3rem;
   box-shadow: var(--shadow);
   max-height: 34.6rem;
+  transition: 0.2s;
 }
 
 .card:hover {
+  transform: scale(1.03);
   box-shadow: var(--shadow-hover);
 }
 

@@ -244,16 +244,31 @@
   }
 }
 
-@media (max-width: 426px) {
-  .body-container,
-  .my-tools-paddings {
+@media (max-width: 425px) {
+  .body-container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .hero-container {
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  .hero-container {
+  nav {
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  .status-online {
+    left: 53px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .hamburger {
+    right: 1.5rem;
   }
 
   .cloud {
@@ -283,23 +298,6 @@
 
   .tools-card-txt {
     font-size: 1rem;
-  }
-
-  nav {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-
-  .status-online {
-    left: 53px;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-
-  .hamburger {
-    right: 1.5rem;
   }
 
   .card-heading {

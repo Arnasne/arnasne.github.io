@@ -74,7 +74,7 @@ p {
   text-align: center;
 }
 
-.container {
+.body-container {
   padding-left: 2.5em;
   padding-right: 2.5em;
 }
@@ -175,7 +175,7 @@ nav {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
-  padding: 1em 3em;
+  padding: 1em 2.5em;
   position: relative;
 }
 
@@ -548,10 +548,6 @@ header {
 /************* Portfolio examples section **************/
 .portfolio-examples-container {
   background-color: var(--bg-accent);
-}
-
-.my-tools-paddings {
-  padding: 0 1.5em;
 }
 
 .section-heading-text-container {

@@ -208,7 +208,7 @@ nav a {
 .status-online {
   position: absolute;
   top: 16px;
-  left: 77px;
+  left: 68px;
   width: 12px;
   height: 12px;
   background-color: rgb(0 196 0);
@@ -221,9 +221,10 @@ nav .mobile-menu {
 }
 
 .nav-link {
+  display: flex;
   border-radius: 2rem;
   align-self: center;
-  padding: 0.8em;
+  padding: 0.75em;
 }
 
 .nav-active {
@@ -294,16 +295,16 @@ nav .mobile-menu {
   font-size: 1.5rem;
 }
 
-.fa-house {
-  font-size: 1.1rem;
+.house-icon,
+.menu-icon,
+.xmark-icon {
+  width: 1.5rem;
 }
 
-.fa-xmark,
-.fa-bars {
+.xmark-icon {
   color: var(--text-color);
-  font-size: 1.4rem;
   display: flex;
-  justify-content: flex-end;
+  justify-self: end;
 }
 
 /* hero section */
@@ -378,7 +379,7 @@ header {
 .avatar-img {
   max-width: 7rem;
   margin-bottom: 3rem;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: var(--light-blue);
 }
 
@@ -884,7 +885,7 @@ footer {
 .img-modal-content {
   max-width: 110vw;
   max-height: 98vh;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 

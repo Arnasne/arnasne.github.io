@@ -254,13 +254,18 @@
     padding-right: 1em;
   }
 
+  .menu-icon,
+  .xmark-icon {
+    width: 1.25rem;
+  }
+
   nav {
     padding-left: 1em;
     padding-right: 1em;
   }
 
   .status-online {
-    left: 53px;
+    left: 44px;
   }
 
   .sidebar {
@@ -318,13 +323,9 @@
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 320px) {
   .btn {
     width: 100%;
-  }
-
-  .fa-bars {
-    font-size: 1rem;
   }
 
   .footer-heading-links-container {

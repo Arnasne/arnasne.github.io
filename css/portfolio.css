@@ -75,12 +75,12 @@ body {
 }
 
 .portfolio-card-password {
-  opacity: 0.7;
   font-size: clamp(1rem, 5vw, 1.125rem);
   letter-spacing: -1px;
   font-weight: 600;
   line-height: inherit;
   margin-left: 4px;
+  color: #008900;
 }
 
 .position-mid {

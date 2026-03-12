@@ -41,13 +41,14 @@
   .intro-section-txt {
     max-width: 100%;
     margin-top: 1rem;
+    text-align: center;
   }
 
   .intro-section-img {
     max-width: 90%;
   }
 
-  .order-change-mobile {
+  .intro-section-order-change-mobile {
     order: 1;
   }
 
@@ -189,10 +190,6 @@
     margin-bottom: 5rem;
   }
 
-  .accordion-question::after {
-    top: -0.3rem;
-  }
-
   #backToTop {
     display: none !important;
   }
@@ -312,10 +309,6 @@
 
   .accordion-item {
     padding: 0.625em 0;
-  }
-
-  .accordion-question::after {
-    top: -0.4rem;
   }
 
   .bird-img {

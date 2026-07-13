@@ -186,7 +186,7 @@ nav ul {
   font-family: var(--Montserrat);
   flex-wrap: wrap;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -299,7 +299,7 @@ nav .mobile-menu {
 .house-icon,
 .menu-icon,
 .xmark-icon {
-  width: 1.5rem;
+  width: 1.4rem;
   color: var(--text-color);
 }
 

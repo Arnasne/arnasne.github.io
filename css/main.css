@@ -587,12 +587,13 @@ header {
 }
 
 .card-heading {
-  font-size: clamp(1rem, 6vw, 1.3rem);
+  font-size: clamp(1rem, 5vw, 1.2rem);
   font-weight: 600;
   font-family: var(--Montserrat);
   color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: -1px;
+  align-content: center;
 }
 
 .main-cards-heading-link-icon {

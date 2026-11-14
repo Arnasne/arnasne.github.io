@@ -186,7 +186,7 @@ nav ul {
   font-family: var(--Montserrat);
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.5rem;
 }
 

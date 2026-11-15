@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 User-agent: *
 Allow: /
 
+=======
+User-agent: *
+Allow: /
+
+>>>>>>> 3c096f58390dd066bb11d646d64b855d18b51d85
 Sitemap: https://arnasne.github.io/sitemap.xml
